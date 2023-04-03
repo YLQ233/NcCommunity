@@ -1,6 +1,7 @@
 package com.nc.nccommunity.dao;
 
 import com.nc.nccommunity.entity.User;
+import org.apache.ibatis.annotations.Mapper;
 
 
 public interface UserMapper {
