@@ -4,9 +4,8 @@ import com.google.code.kaptcha.Producer;
 import com.nc.nccommunity.entity.User;
 import com.nc.nccommunity.service.UserService;
 import com.nc.nccommunity.util.CommunityConstant;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -22,6 +21,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Map;
 
+@Slf4j
 @Controller
 public class LoginController implements CommunityConstant {
 	@Autowired
@@ -30,7 +30,6 @@ public class LoginController implements CommunityConstant {
 	private Producer kaptchaProducer;
 	@Value("${server.servlet.context-path}")
 	private String contextPath;
-	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
 	
 	@GetMapping("/register")
@@ -89,7 +88,7 @@ public class LoginController implements CommunityConstant {
 			OutputStream os = response.getOutputStream();
 			ImageIO.write(image, "png", os);
 		} catch (IOException e) {
-			logger.error("响应验证码失败:" + e.getMessage());
+			log.error("响应验证码失败:" + e.getMessage());
 		}
 	}
 	
@@ -122,8 +121,6 @@ public class LoginController implements CommunityConstant {
 	@GetMapping("/logout")
 	public String logout(@CookieValue("ticket") String ticket){
 		userService.logout(ticket);
-		
-		
 		return "redirect:/login";
 	}
 	

@@ -1,5 +1,6 @@
 package com.nc.nccommunity;
 
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.slf4j.Logger;
@@ -11,14 +12,14 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 @ContextConfiguration(classes = NcCommunityApplication.class)
+@Slf4j
 class logTest {
-	private static final Logger logger = LoggerFactory.getLogger(logTest.class);
 	@Test
 	void test(){
-		System.out.println(logger.getName());
-		logger.debug("debug");
-		logger.info("info");
-		logger.warn("warn");
-		logger.error("error");
+		System.out.println(log.getName());
+		log.debug("debug");
+		log.info("info");
+		log.warn("warn");
+		log.error("error");
 	}
 }
