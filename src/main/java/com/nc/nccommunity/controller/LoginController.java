@@ -31,7 +31,6 @@ public class LoginController implements CommunityConstant {
 	@Value("${server.servlet.context-path}")
 	private String contextPath;
 	
-	
 	@GetMapping("/register")
 	public String toRegisterPage(){
 		return "/site/register";

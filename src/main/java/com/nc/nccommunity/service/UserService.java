@@ -90,6 +90,33 @@ public class UserService implements CommunityConstant {
 		return map;
 	}
 	
+	public Map<String,Object> updatePassword(User user, String oldpw, String newpw){
+		Map<String,Object> map = new HashMap<String,Object>();
+		//null
+		if (user == null) {
+			throw new IllegalArgumentException("不可为空");
+		}
+		if (StringUtils.isBlank(oldpw)) {
+			map.put("oldPasswordMsg", "原密码不能为空!");
+			return map;
+		}
+		if (StringUtils.isBlank(newpw)) {
+			map.put("newPasswordMsg", "新密码不能为空!");
+			return map;
+		}
+		
+		//old != new
+		if(oldpw.equals(newpw)){
+			map.put("newPasswordMsg", "新密码不能与原密码一致!");
+			return map;
+		}
+		
+		//save change
+		userMapper.updatePassword(user.getId(), CommunityUtil.md5(newpw + user.getSalt()));
+		
+		return map;
+	}
+	
 	public int activation(int userId, String code){
 		User user = userMapper.selectById(userId);
 		if (user.getStatus() == 1) {
@@ -150,6 +177,10 @@ public class UserService implements CommunityConstant {
 	
 	public LoginTicket getLoginTicketByTicket(String ticket) {
 		return loginTicketMapper.selectByTicket(ticket);
+	}
+	
+	public int updateHeader(int id, String headerUrl){
+		return userMapper.updateHeader(id, headerUrl);
 	}
 	
 }
