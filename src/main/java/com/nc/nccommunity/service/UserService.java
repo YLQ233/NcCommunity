@@ -1,6 +1,8 @@
 package com.nc.nccommunity.service;
 
+import com.nc.nccommunity.dao.LoginTicketMapper;
 import com.nc.nccommunity.dao.UserMapper;
+import com.nc.nccommunity.entity.LoginTicket;
 import com.nc.nccommunity.entity.User;
 import com.nc.nccommunity.util.CommunityConstant;
 import com.nc.nccommunity.util.CommunityUtil;
@@ -25,6 +27,8 @@ public class UserService implements CommunityConstant {
 	private MailClient mailClient;
 	@Autowired
 	private TemplateEngine templateEngine;
+	@Autowired
+	private LoginTicketMapper loginTicketMapper;
 	@Value("${community.path.domain}")
 	String domain;
 	@Value("${server.servlet.context-path}")
@@ -96,6 +100,52 @@ public class UserService implements CommunityConstant {
 		} else {
 			return ACTIVATION_FAILURE;
 		}
+	}
+	
+	public Map<String,Object> login(String username, String password, long expiredSeconds){
+		Map<String,Object> map = new HashMap<String,Object>();
+		//空值
+		if (StringUtils.isBlank(username)) {
+			map.put("usernameMsg", "账号不能为空!");
+			return map;
+		}
+		if (StringUtils.isBlank(password)) {
+			map.put("passwordMsg", "密码不能为空!");
+			return map;
+		}
+		
+		//验证
+		User user = userMapper.selectByName(username);
+		if(user == null) {
+			map.put("usernameMsg", "该账号不存在!");
+			return map;
+		}
+		password = CommunityUtil.md5(password + user.getSalt());
+		if(!user.getPassword().equals(password)){
+			map.put("passwordMsg", "密码不正确!");
+			return map;
+		}
+		if(user.getStatus() == 0){
+			map.put("usernameMsg", "该账号未激活!");
+			return map;
+		}
+		
+		//登录凭证
+		String ticket = CommunityUtil.generateUUID();
+		LoginTicket loginTicket = new LoginTicket();
+		loginTicket.setUserId(user.getId());
+		loginTicket.setTicket(ticket);
+		loginTicket.setStatus(0);
+		loginTicket.setExpired(new Date(System.currentTimeMillis() + expiredSeconds * 1000));
+		loginTicketMapper.insertLoginTicket(loginTicket);
+		
+		map.put("ticket", loginTicket.getTicket());
+		
+		return map;
+	}
+	
+	public void logout(String ticket) {
+		loginTicketMapper.updateStatus(ticket, 1);
 	}
 	
 }

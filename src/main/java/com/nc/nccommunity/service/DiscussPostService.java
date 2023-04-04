@@ -13,9 +13,9 @@ public class DiscussPostService {
 	private DiscussPostMapper discussPostMapper;
 	
 	public List<DiscussPost> getDiscussPostList(int userId, int offset, int limit){
-		return discussPostMapper.getDiscussPostList(userId, offset, limit);
+		return discussPostMapper.selectDiscussPostList(userId, offset, limit);
 	}
 	public int getDiscussPostRows(int userId){
-		return discussPostMapper.getDiscussPostRows(userId);
+		return discussPostMapper.selectDiscussPostRows(userId);
 	}
 }

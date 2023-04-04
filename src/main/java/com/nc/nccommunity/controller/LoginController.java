@@ -4,17 +4,19 @@ import com.google.code.kaptcha.Producer;
 import com.nc.nccommunity.entity.User;
 import com.nc.nccommunity.service.UserService;
 import com.nc.nccommunity.util.CommunityConstant;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.imageio.ImageIO;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.xml.ws.Action;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -26,7 +28,11 @@ public class LoginController implements CommunityConstant {
 	UserService userService;
 	@Autowired
 	private Producer kaptchaProducer;
+	@Value("${server.servlet.context-path}")
+	private String contextPath;
 	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
+	
+	
 	@GetMapping("/register")
 	public String toRegisterPage(){
 		return "/site/register";
@@ -86,5 +92,40 @@ public class LoginController implements CommunityConstant {
 			logger.error("响应验证码失败:" + e.getMessage());
 		}
 	}
+	
+	@PostMapping("/login")
+	public String login(String username, String password, String code, boolean rememberme,
+						HttpSession session, Model model, HttpServletResponse response) {
+		//code
+		String kaptcha = (String) session.getAttribute("kaptcha");
+		if(StringUtils.isBlank(kaptcha) || StringUtils.isBlank(code) || !kaptcha.equalsIgnoreCase(code)){
+			model.addAttribute("codeMsg", "验证码不正确!");
+			return "/site/login";
+		}
+		
+		//un+pw
+		int expiredSeconds = rememberme ? REMEMBER_EXPIRED_SECONDS : DEFAULT_EXPIRED_SECONDS;
+		Map<String,Object> map = userService.login(username,password,expiredSeconds);
+		if(map.containsKey("ticket")){
+			Cookie cookie = new Cookie("ticket", (String) map.get("ticket"));
+			cookie.setPath(contextPath);
+			cookie.setMaxAge(expiredSeconds);
+			response.addCookie(cookie);
+			return "redirect:/index";
+		}else{
+			model.addAttribute("usernameMsg", map.get("usernameMsg"));
+			model.addAttribute("passwordMsg", map.get("passwordMsg"));
+			return "/site/login";
+		}
+	}
+	
+	@GetMapping("/logout")
+	public String logout(@CookieValue("ticket") String ticket){
+		userService.logout(ticket);
+		
+		
+		return "redirect:/login";
+	}
+	
 	
 }

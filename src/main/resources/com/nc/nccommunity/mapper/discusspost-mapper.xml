@@ -9,7 +9,7 @@
     </sql>
 
 <!--   List<DiscussPost> selectDiscussPost(int userId, int offset, int limit);-->
-    <select id="getDiscussPostList" resultType="DiscussPost">
+    <select id="selectDiscussPostList" resultType="DiscussPost">
         select <include refid="selectFields"></include>
             from discuss_post
             where status != 2
@@ -18,7 +18,7 @@
         limit #{offset}, #{limit}
     </select>
 <!--    int selectDiscussPostRows(@Param("userId") int userId);-->
-    <select id="getDiscussPostRows" resultType="int">
+    <select id="selectDiscussPostRows" resultType="int">
         select count(id)
         from discuss_post
         where status != 2
