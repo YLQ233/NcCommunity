@@ -1,5 +1,6 @@
 package com.nc.nccommunity.controller;
 
+import com.nc.nccommunity.annotation.LoginRequired;
 import com.nc.nccommunity.entity.User;
 import com.nc.nccommunity.service.UserService;
 import com.nc.nccommunity.util.CommunityUtil;
@@ -36,13 +37,16 @@ public class UserController {
 	String contextPath;
 	@Value("${community.path.upload}")
 	String uploadPath;
+	
+	@LoginRequired
 	@GetMapping("/setting")
 	public String toSettingPage(){
 		return "/site/setting";
 	}
 	
+	@LoginRequired
 	@PostMapping("/upload")
-	public String upload(@RequestPart("headerImage")MultipartFile headerImg, Model model) {
+	public String uploadHeader(@RequestPart("headerImage")MultipartFile headerImg, Model model) {
 		//空图处理
 		if(headerImg == null) {
 			model.addAttribute("error", "Missing header image");
@@ -97,7 +101,9 @@ public class UserController {
 		User user = hostHolder.getUser();
 		Map<String, Object> map = userService.updatePassword(user, oldpw, newpw);
 		if(map.isEmpty()){
-			return "/site/login";
+			model.addAttribute("msg","密码修改成功，请重新登录");
+			model.addAttribute("target","/logout");
+			return "/site/operate-result";
 		}else{
 			model.addAttribute("oldPasswordMsg", map.get("oldPasswordMsg"));
 			model.addAttribute("newPasswordMsg", map.get("newPasswordMsg"));

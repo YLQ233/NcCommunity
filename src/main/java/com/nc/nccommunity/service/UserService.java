@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
+import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -37,6 +38,10 @@ public class UserService implements CommunityConstant {
 	
 	public User getUserById(int id){
 		return userMapper.selectById(id);
+	}
+	public boolean isEmailExist(String email) {
+		User user = userMapper.selectByEmail(email);
+		return user != null;
 	}
 	
 	public Map<String,Object> register(User user){
@@ -63,7 +68,7 @@ public class UserService implements CommunityConstant {
 			map.put("usernameMsg", "该账号已存在!");
 			return map;
 		}
-		if(userMapper.selectByEmail(user.getEmail()) != null){
+		if(isEmailExist(user.getEmail())){
 			map.put("emailMsg", "该邮箱已被注册!");
 			return map;
 		}
@@ -86,33 +91,6 @@ public class UserService implements CommunityConstant {
 		context.setVariable("url",url);
 		String content = templateEngine.process("/mail/activation",context);
 		mailClient.sendMail(user.getEmail(),"Please activate your account",content);
-		
-		return map;
-	}
-	
-	public Map<String,Object> updatePassword(User user, String oldpw, String newpw){
-		Map<String,Object> map = new HashMap<String,Object>();
-		//null
-		if (user == null) {
-			throw new IllegalArgumentException("不可为空");
-		}
-		if (StringUtils.isBlank(oldpw)) {
-			map.put("oldPasswordMsg", "原密码不能为空!");
-			return map;
-		}
-		if (StringUtils.isBlank(newpw)) {
-			map.put("newPasswordMsg", "新密码不能为空!");
-			return map;
-		}
-		
-		//old != new
-		if(oldpw.equals(newpw)){
-			map.put("newPasswordMsg", "新密码不能与原密码一致!");
-			return map;
-		}
-		
-		//save change
-		userMapper.updatePassword(user.getId(), CommunityUtil.md5(newpw + user.getSalt()));
 		
 		return map;
 	}
@@ -181,6 +159,73 @@ public class UserService implements CommunityConstant {
 	
 	public int updateHeader(int id, String headerUrl){
 		return userMapper.updateHeader(id, headerUrl);
+	}
+	
+	public Map<String,Object> updatePassword(User user, String oldpw, String newpw){
+		Map<String,Object> map = new HashMap<String,Object>();
+		//null
+		if (user == null) {
+			throw new IllegalArgumentException("不可为空");
+		}
+		if (StringUtils.isBlank(oldpw)) {
+			map.put("oldPasswordMsg", "原密码不能为空!");
+			return map;
+		}
+		if (StringUtils.isBlank(newpw)) {
+			map.put("newPasswordMsg", "新密码不能为空!");
+			return map;
+		}
+		
+		//old != pw
+		oldpw = CommunityUtil.md5(oldpw + user.getSalt());
+		if(!user.getPassword().equals(oldpw)){
+			map.put("oldPasswordMsg", "原密码错误!");
+			return map;
+		}
+		
+		//save change
+		userMapper.updatePassword(user.getId(), CommunityUtil.md5(newpw + user.getSalt()));
+		
+		return map;
+	}
+	
+	public Map<String,Object> resetPassword (String email, String password){
+		Map<String,Object> map = new HashMap<String,Object>();
+		//null
+		if(StringUtils.isBlank(password)){
+			map.put("passwordMsg", "密码不能为空!");
+			return map;
+		}
+		if(StringUtils.isBlank(email)){
+			map.put("emailMsg", "邮箱不能为空!");
+			return map;
+		}
+		
+		//correct email
+		if(userMapper.selectByEmail(email) == null){
+			map.put("emailMsg", "邮箱未注册!");
+		}
+		
+		//change
+		User user = userMapper.selectByEmail(email);
+		password = CommunityUtil.md5(password + user.getSalt());
+		userMapper.updatePassword(user.getId(), password);
+		map.put("user",user);
+		
+		return map;
+	}
+	
+	public String getForgetCode(String email){
+		Map<String,Object> map = new HashMap<String,Object>();
+		//email
+		String verifyCode = CommunityUtil.generateUUID().substring(0, 4);
+		Context context = new Context();
+		context.setVariable("email", email);
+		context.setVariable("verifyCode", verifyCode);
+		String content = templateEngine.process("/mail/forget", context);
+		mailClient.sendMail(email, "找回密码", content);
+		
+		return verifyCode;
 	}
 	
 }

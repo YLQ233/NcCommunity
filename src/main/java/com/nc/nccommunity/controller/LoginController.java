@@ -4,6 +4,7 @@ import com.google.code.kaptcha.Producer;
 import com.nc.nccommunity.entity.User;
 import com.nc.nccommunity.service.UserService;
 import com.nc.nccommunity.util.CommunityConstant;
+import com.nc.nccommunity.util.CommunityUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ import javax.servlet.http.HttpSession;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.HashMap;
 import java.util.Map;
 
 @Slf4j
@@ -41,7 +43,7 @@ public class LoginController implements CommunityConstant {
 		Map<String, Object> map = userService.register(user);
 		if(map==null || map.isEmpty()){
 			model.addAttribute("msg","点击邮箱链接即可激活");
-			model.addAttribute("target", "/index");
+			model.addAttribute("target", "redirect:/index");
 			return "/site/operate-result";
 		} else {
 			model.addAttribute("usernameMsg", map.get("usernameMsg"));
@@ -72,7 +74,7 @@ public class LoginController implements CommunityConstant {
 		return "/site/login";
 	}
 	
-	@GetMapping(path = "/kaptcha")
+	@GetMapping("/kaptcha")
 	public void getKaptcha(HttpServletResponse response, HttpSession session) {
 		// 生成验证码
 		String text = kaptchaProducer.createText();
@@ -123,5 +125,45 @@ public class LoginController implements CommunityConstant {
 		return "redirect:/login";
 	}
 	
+	@GetMapping("/forget")
+	public String toForgetPage(){
+		return "/site/forget";
+	}
+	
+	@PostMapping("/forget/password")
+	public String forgetPassword(String email, String verifyCode, String password, Model model, HttpSession session){
+		String correctCode = (String) session.getAttribute(email+"_verifyCode");
+		if(StringUtils.isBlank(verifyCode) || StringUtils.isBlank(correctCode) || !correctCode.equals(verifyCode)){
+			model.addAttribute("codeMsg", "验证码错误!");
+			return "/site/forget";
+		}
+		Map<String,Object> map = userService.resetPassword(email, password);
+		if(map.containsKey("user")) {
+			model.addAttribute("msg","密码修改成功，请重新登录");
+			model.addAttribute("target","/logout");
+			return "/site/operate-result";
+		}else{
+			model.addAttribute("passwordMsg", model.getAttribute("passwordMsg"));
+			model.addAttribute("emailMsg", model.getAttribute("emailMsg"));
+			return "/site/forget";
+		}
+	}
+	
+	@GetMapping("/forget/code")
+	@ResponseBody
+	public String getForgetCode(String email, HttpSession session){
+		//null
+		if (StringUtils.isBlank(email)) {
+			return CommunityUtil.getJSONString(1, "邮箱不能为空！");
+		}
+		//verify email
+		if(!userService.isEmailExist(email)) {
+			return CommunityUtil.getJSONString(1, "邮箱未注册");
+		}
+		//save code
+		session.setAttribute(email+"_verifyCode", userService.getForgetCode(email));
+		
+		return CommunityUtil.getJSONString(0);
+	}
 	
 }
