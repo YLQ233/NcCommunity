@@ -22,7 +22,6 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
 	UserService userService;
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-		System.out.println("\n\n开启拦截\n\n");
 		
 		String ticket = CookieUtil.getCookieValue(request, "ticket");
 		if(ticket != null){
@@ -32,7 +31,6 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
 			if(loginTicket!=null && loginTicket.getStatus()==0 && loginTicket.getExpired().after(new Date())){
 				User user = userService.getUserById(loginTicket.getUserId());
 				hostHolder.setUser(user);//保存User到本次请求的线程
-				System.out.println("\n\n保存loginUser\n\n");
 			}
 		}
 		
@@ -45,12 +43,10 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
 		User user = hostHolder.getUser();
 		if(user!=null && modelAndView!=null)
 			modelAndView.addObject("loginUser",user);
-		System.out.println("\n\n处理视图\n\n");
 	}
 	
 	@Override
 	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
 		hostHolder.clear();
-		System.out.println("\n\n关闭loginUser\n\n");
 	}
 }
