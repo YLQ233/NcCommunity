@@ -39,6 +39,11 @@ public class UserService implements CommunityConstant {
 	public User getUserById(int id){
 		return userMapper.selectById(id);
 	}
+	
+	public User getUserByName(String name){
+		return userMapper.selectByName(name);
+	}
+	
 	public boolean isEmailExist(String email) {
 		User user = userMapper.selectByEmail(email);
 		return user != null;

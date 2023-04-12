@@ -2,9 +2,11 @@ package com.nc.nccommunity;
 
 import com.nc.nccommunity.dao.DiscussPostMapper;
 import com.nc.nccommunity.dao.LoginTicketMapper;
+import com.nc.nccommunity.dao.MessageMapper;
 import com.nc.nccommunity.dao.UserMapper;
 import com.nc.nccommunity.entity.DiscussPost;
 import com.nc.nccommunity.entity.LoginTicket;
+import com.nc.nccommunity.entity.Message;
 import com.nc.nccommunity.entity.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +26,9 @@ class MapperTests {
 	
 	@Autowired
 	private LoginTicketMapper loginTicketMapper;
+	
+	@Autowired
+	private MessageMapper messageMapper;
 	
 	@Test
 	public void testSelectUser() {
@@ -97,4 +102,26 @@ class MapperTests {
 		loginTicketMapper.updateStatus("abc", 1);
 	}
 	
+	@Test
+	public void testSelectLetters() {
+		List<Message> list = messageMapper.selectConversations(111, 0, 20);
+		for (Message message : list) {
+//			System.out.println(message);
+		}
+		
+		int count = messageMapper.selectConversationCount(111);
+		System.out.println(count);
+
+		list = messageMapper.selectLetters("111_112", 0, 10);
+		for (Message message : list) {
+			System.out.println(message);
+		}
+
+		count = messageMapper.selectLetterCount("111_112");
+		System.out.println(count);
+
+		count = messageMapper.selectUnreadLetterCount(131, "111_131");
+		System.out.println(count);
+	
+	}
 }

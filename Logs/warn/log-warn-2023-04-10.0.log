@@ -1,0 +1,1 @@
+2023-04-10 23:16:30,794 WARN [http-nio-8080-exec-1] o.s.w.s.m.s.DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
