@@ -7,8 +7,6 @@ import com.nc.nccommunity.service.MessageService;
 import com.nc.nccommunity.service.UserService;
 import com.nc.nccommunity.util.CommunityUtil;
 import com.nc.nccommunity.util.HostHolder;
-import com.sun.istack.internal.NotNull;
-import lombok.NonNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

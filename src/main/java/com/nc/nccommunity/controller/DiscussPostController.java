@@ -6,6 +6,7 @@ import com.nc.nccommunity.entity.Page;
 import com.nc.nccommunity.entity.User;
 import com.nc.nccommunity.service.CommentService;
 import com.nc.nccommunity.service.DiscussPostService;
+import com.nc.nccommunity.service.LikeService;
 import com.nc.nccommunity.service.UserService;
 import com.nc.nccommunity.util.CommunityConstant;
 import com.nc.nccommunity.util.CommunityUtil;
@@ -28,6 +29,8 @@ public class DiscussPostController implements CommunityConstant {
 	private HostHolder hostHolder;
 	@Autowired
 	private CommentService commentService;
+	@Autowired
+	private LikeService likeService;
 	
 	@PostMapping("/add")
 	@ResponseBody
@@ -56,6 +59,13 @@ public class DiscussPostController implements CommunityConstant {
 		model.addAttribute("post", post);
 		model.addAttribute("user", user);
 		
+		//like
+		long likeCount = likeService.countLike(ENTITY_TYPE_POST, id);
+		model.addAttribute("likeCount", likeCount);
+		
+		int likeStatus = hostHolder.getUser()!=null ? likeService.ifLiked(hostHolder.getUser().getId(), ENTITY_TYPE_POST, id)?1:0 : 0;
+		model.addAttribute("likeStatus", likeStatus);
+		
 		// comment
 		// 评论分页信息
 		page.setLimit(5);
@@ -73,6 +83,13 @@ public class DiscussPostController implements CommunityConstant {
 				commentVo.put("user", userService.getUserById(comment.getUserId()));
 				commentVo.put("comment", comment);
 				
+				//like
+				likeCount = likeService.countLike(ENTITY_TYPE_COMMENT, comment.getId());
+				commentVo.put("likeCount", likeCount);
+				
+				likeStatus = hostHolder.getUser()!=null ? likeService.ifLiked(hostHolder.getUser().getId(), ENTITY_TYPE_COMMENT, comment.getId())?1:0 : 0;
+				commentVo.put("likeStatus", likeStatus);
+				
 				//repliesVo: author,reply,target
 				List<Map<String,Object>> repliesVoList = new ArrayList<>();
 				List<Comment> repliesList = commentService.findCommentsByEntity(ENTITY_TYPE_COMMENT, comment.getId(), 0, Integer.MAX_VALUE);
@@ -83,10 +100,16 @@ public class DiscussPostController implements CommunityConstant {
 						replyVo.put("reply", reply);
 						User target = reply.getTargetId() == 0 ? null : userService.getUserById(reply.getTargetId());
 						replyVo.put("target", target);
+						//like
+						likeCount = likeService.countLike(ENTITY_TYPE_COMMENT, reply.getId());
+						replyVo.put("likeCount", likeCount);
+						likeStatus = hostHolder.getUser()!=null ? likeService.ifLiked(hostHolder.getUser().getId(), ENTITY_TYPE_COMMENT, reply.getId())?1:0 : 0;
+						replyVo.put("likeStatus", likeStatus);
+						
 						repliesVoList.add(replyVo);
 					}
 				}
-				commentVo.put("replies", repliesVoList);
+				commentVo.put("replys", repliesVoList);
 				
 				//replies-count
 				int replyCount = commentService.findCountByEntity(ENTITY_TYPE_COMMENT, comment.getId());
