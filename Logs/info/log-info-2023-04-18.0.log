@@ -1,0 +1,915 @@
+2023-04-18 00:56:16,072 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 47808 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 00:56:16,077 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 00:56:16,128 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18 00:56:16,128 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18 00:56:16,971 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 00:56:16,974 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 00:56:17,008 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2023-04-18 00:56:17,589 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 00:56:17,617 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 00:56:17,618 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 00:56:17,618 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 00:56:17,694 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 00:56:17,694 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1565 ms
+2023-04-18 00:56:18,076 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-04-18 00:56:18,086 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-18 00:57:08,576 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 43192 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 00:57:08,578 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 00:57:08,611 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18 00:57:08,611 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18 00:57:09,102 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 00:57:09,103 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 00:57:09,126 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-04-18 00:57:09,633 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 00:57:09,639 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 00:57:09,640 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 00:57:09,640 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 00:57:09,711 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 00:57:09,711 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1100 ms
+2023-04-18 00:57:10,416 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 00:57:10,672 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 00:57:10,685 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 00:57:10,698 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 00:57:10,706 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 2.448 seconds (JVM running for 3.223)
+2023-04-18 00:57:16,191 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 00:57:16,191 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 00:57:16,193 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2 ms
+2023-04-18 00:57:16,225 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 00:57:16,252 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-04-18 00:57:16,394 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-04-18 00:57:16,452 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 00:57:16,461 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:57:16,469 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:57:16,471 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:57:16,472 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:57:16,475 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:57:16,476 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:57:16,477 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:57:16,487 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:57:16,489 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:57:16,491 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:57:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:58:09,684 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 00:58:09,687 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 00:58:09,693 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:58:09,696 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:58:09,699 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:58:09,701 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:58:09,702 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:58:09,705 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:58:09,707 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:58:09,708 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:58:09,710 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 00:58:09,711 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 00:58:09],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:03:31,073 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.login].
+2023-04-18 01:03:31,102 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 01:03:31,104 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:03:31,106 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 01:03:31,107 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 01:03:31,110 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:03:31,112 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:03:31,114 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:03:31,115 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:03:31,118 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:03:31,119 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:03:31,120 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:03:31,122 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:03:31,124 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:03:31,126 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:03:31],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,467 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 01:04:16,470 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,476 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 01:04:16,478 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,480 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:04:16,503 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,504 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:04:16,506 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,507 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,508 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,513 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,515 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 01:04:16,517 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,518 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:04:16,519 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 01:04:16,521 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,522 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:04:16,523 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 01:04:16,525 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,526 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:04:16,528 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 01:04:16,530 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:04:16,531 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:04:16,532 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 01:04:16,561 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 01:04:16,563 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:04:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,417 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 01:08:57,419 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,421 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 01:08:57,422 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,423 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:08:57,425 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,426 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:08:57,428 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,429 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,431 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,432 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,433 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 01:08:57,434 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,435 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:08:57,436 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 01:08:57,438 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,438 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:08:57,439 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 01:08:57,440 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,441 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:08:57,443 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 01:08:57,444 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:08:57,445 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 01:08:57,446 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 01:08:57,454 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 01:08:57,455 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 01:08:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 01:14:44,405 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-04-18 01:14:44,412 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-04-18 17:39:02,962 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 54252 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 17:39:02,963 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 17:39:03,001 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18 17:39:03,001 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18 17:39:03,754 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 17:39:03,757 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 17:39:03,781 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-04-18 17:39:04,357 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 17:39:04,365 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 17:39:04,365 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 17:39:04,366 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 17:39:04,444 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 17:39:04,444 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1443 ms
+2023-04-18 17:39:05,271 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 17:39:05,528 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 17:39:05,540 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 17:39:05,561 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 17:39:05,569 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 3.004 seconds (JVM running for 5.573)
+2023-04-18 17:39:11,479 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 17:39:11,480 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 17:39:11,481 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2023-04-18 17:39:11,512 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 17:39:11,534 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-04-18 17:39:11,649 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-04-18 17:39:11,690 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 17:39:11,700 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:39:11,707 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:39:11,710 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:39:11,711 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:39:11,713 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:39:11,714 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:39:11,717 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:39:11,719 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:39:11,720 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:39:11,722 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:39:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:43:47,313 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 17:43:47,315 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:43:47,318 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 17:43:47,325 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:43:47,328 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 17:43:47,331 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:43:47,333 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:43:47,335 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:43:47,337 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:43:47,340 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 17:43:47,342 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:43:47,344 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 17:43:47,345 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 17:43:47,347 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:43:47,348 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 17:43:47,350 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 17:43:47,351 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:43:47,354 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 17:43:47,356 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 17:43:47,357 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 17:43:47,359 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 17:43:47,361 INFO [http-nio-8080-exec-8] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 17:43:47],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 19:28:12,632 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-04-18 19:28:12,634 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-04-18 19:53:58,220 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 56832 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 19:53:58,221 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 19:53:58,259 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18 19:53:58,259 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18 19:53:58,955 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 19:53:58,956 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 19:53:58,980 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-04-18 19:53:59,526 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 19:53:59,532 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:53:59,532 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 19:53:59,533 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 19:53:59,604 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 19:53:59,606 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1346 ms
+2023-04-18 19:54:00,323 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 19:54:00,559 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 19:54:00,572 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:54:00,585 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 19:54:00,593 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 2.751 seconds (JVM running for 3.689)
+2023-04-18 19:54:07,196 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 19:54:07,196 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 19:54:07,197 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2023-04-18 19:54:07,225 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 19:54:07,248 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-04-18 19:54:07,347 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-04-18 19:54:07,387 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 19:54:07,395 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:54:07,402 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:54:07,921 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:54:07,924 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:54:07,925 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:54:07,928 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:54:07,929 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:54:07,930 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:54:07,932 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:54:07,934 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:54:07,935 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:54:07,936 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:54:07,937 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:54:07,939 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:54:07,941 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:54:07,943 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:54:07,944 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:54:07,946 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:54:07,946 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:54:07,948 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:54:07],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:59:23,986 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-18 19:59:24,343 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:59:24,343 INFO [Thread-11] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-04-18 19:59:24,345 INFO [Thread-11] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-18 19:59:24,363 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:59:24,364 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:59:24,505 INFO [Thread-11] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-04-18 19:59:24,514 INFO [Thread-11] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-04-18 19:59:24,679 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 56832 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 19:59:24,679 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 19:59:24,885 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 19:59:24,885 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 19:59:24,893 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-04-18 19:59:25,023 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 19:59:25,023 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:59:25,024 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 19:59:25,024 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 19:59:25,048 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 19:59:25,048 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 366 ms
+2023-04-18 19:59:25,257 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 19:59:25,423 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 19:59:25,430 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:59:25,431 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 19:59:25,434 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 0.804 seconds (JVM running for 328.53)
+2023-04-18 19:59:25,435 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2023-04-18 19:59:26,906 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-18 19:59:27,146 INFO [Thread-17] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:59:27,146 INFO [Thread-17] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-04-18 19:59:27,149 INFO [Thread-17] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:59:27,151 INFO [Thread-17] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:59:27,299 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 56832 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 19:59:27,299 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 19:59:27,456 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 19:59:27,456 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 19:59:27,464 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-04-18 19:59:27,532 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 19:59:27,533 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:59:27,533 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 19:59:27,533 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 19:59:27,554 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 19:59:27,555 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 254 ms
+2023-04-18 19:59:27,734 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 19:59:27,828 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 19:59:27,837 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 19:59:27,839 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 19:59:27,842 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 0.575 seconds (JVM running for 330.938)
+2023-04-18 19:59:27,842 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2023-04-18 19:59:36,457 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 19:59:36,458 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 19:59:36,459 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2023-04-18 19:59:36,460 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 19:59:36,463 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
+2023-04-18 19:59:36,467 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
+2023-04-18 19:59:36,468 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 19:59:36,472 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:59:36,476 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:59:36,486 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:59:36,490 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:59:36,491 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:59:36,493 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:59:36,494 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:59:36,495 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:59:36,496 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:59:36,498 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:59:36,498 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:59:36,500 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:59:36,500 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:59:36,503 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:59:36,504 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:59:36,505 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:59:36,506 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:59:36,507 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 19:59:36,507 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 19:59:36,509 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 19:59:36],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:08:51,691 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-2 - Shutdown initiated...
+2023-04-18 20:08:51,693 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-2 - Shutdown completed.
+2023-04-18 20:18:46,158 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 55240 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 20:18:46,159 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 20:18:46,196 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18 20:18:46,196 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18 20:18:46,900 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 20:18:46,903 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 20:18:46,933 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2023-04-18 20:18:47,476 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 20:18:47,483 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:18:47,484 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 20:18:47,484 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 20:18:47,560 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 20:18:47,561 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1365 ms
+2023-04-18 20:18:48,361 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 20:18:48,630 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 20:18:48,644 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:18:48,658 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 20:18:48,665 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 2.854 seconds (JVM running for 3.688)
+2023-04-18 20:18:57,699 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 20:18:57,699 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 20:18:57,700 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 0 ms
+2023-04-18 20:18:57,726 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:57],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 20:18:57,751 INFO [http-nio-8080-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-04-18 20:18:57,848 INFO [http-nio-8080-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-04-18 20:18:57,888 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:57],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 20:18:57,896 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:18:57,902 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:57],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:18:58,341 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:18:58,344 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:18:58,344 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:18:58,346 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:18:58,347 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:18:58,349 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:18:58,349 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:18:58,351 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:18:58,353 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:18:58,355 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:18:58,355 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:18:58,357 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:18:58,358 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:18:58,360 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:18:58,361 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:18:58,362 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:18:58,363 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:18:58,364 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:18:58],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:20:35,875 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.login].
+2023-04-18 20:20:35,900 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:20:35,903 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:20:35,907 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 20:20:35,909 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 20:20:35,916 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:20:35,917 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:20:35,918 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:20:35,920 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:20:35,922 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:20:35,923 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:20:35,924 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:20:35,928 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:20:35,929 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:20:35,930 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:20:35,931 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:20:35,934 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:20:35,935 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:20:35,936 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:20:35,937 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:20:35,938 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:20:35,940 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:20:35,941 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:20:35,942 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:20:35,944 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:20:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:24:55,682 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-18 20:24:55,889 INFO [Thread-10] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:24:55,890 INFO [Thread-10] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-04-18 20:24:55,890 INFO [Thread-10] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-18 20:24:55,903 INFO [Thread-10] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:24:55,905 INFO [Thread-10] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:24:56,027 INFO [Thread-10] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-04-18 20:24:56,033 INFO [Thread-10] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-04-18 20:24:56,183 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 55240 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 20:24:56,183 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 20:24:56,356 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 20:24:56,356 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 20:24:56,364 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-04-18 20:24:56,500 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 20:24:56,501 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:24:56,502 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 20:24:56,502 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 20:24:56,527 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 20:24:56,527 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 342 ms
+2023-04-18 20:24:56,783 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 20:24:56,908 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 20:24:56,917 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:24:56,919 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 20:24:56,922 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 0.777 seconds (JVM running for 371.945)
+2023-04-18 20:24:56,924 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2023-04-18 20:24:58,403 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-18 20:24:58,631 INFO [Thread-17] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:24:58,632 INFO [Thread-17] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-04-18 20:24:58,637 INFO [Thread-17] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:24:58,638 INFO [Thread-17] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:24:58,790 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 55240 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 20:24:58,790 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 20:24:58,960 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 20:24:58,960 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 20:24:58,969 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-04-18 20:24:59,108 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 20:24:59,109 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:24:59,109 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 20:24:59,109 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 20:24:59,130 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 20:24:59,130 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 338 ms
+2023-04-18 20:24:59,408 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 20:24:59,539 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 20:24:59,545 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:24:59,547 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 20:24:59,551 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 0.794 seconds (JVM running for 374.574)
+2023-04-18 20:24:59,553 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2023-04-18 20:25:17,126 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 20:25:17,126 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 20:25:17,127 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2023-04-18 20:25:17,128 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:25:17,137 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
+2023-04-18 20:25:17,140 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
+2023-04-18 20:25:17,143 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:25:17,149 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 20:25:17,152 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:25:17,154 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:25:17,165 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:25:17,177 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 20:25:17,181 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:25:17,182 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:25:17,183 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:25:17,186 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 20:25:17,189 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:25:17,190 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:25:17,191 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:25:17,191 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:25:17,193 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:25:17,194 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:25:17,195 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:25:17,196 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:25:17,197 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:25:17,197 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 20:25:17,235 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:25:17,237 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:25:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:26:37,181 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-18 20:26:37,397 INFO [Thread-21] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:26:37,397 INFO [Thread-21] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-04-18 20:26:37,398 INFO [Thread-21] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-18 20:26:37,406 INFO [Thread-21] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:26:37,408 INFO [Thread-21] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:26:37,527 INFO [Thread-21] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-2 - Shutdown initiated...
+2023-04-18 20:26:37,529 INFO [Thread-21] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-2 - Shutdown completed.
+2023-04-18 20:26:37,688 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 55240 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 20:26:37,689 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 20:26:37,889 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 20:26:37,890 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 20:26:37,899 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-04-18 20:26:38,029 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 20:26:38,030 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:26:38,030 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 20:26:38,030 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 20:26:38,052 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 20:26:38,052 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 361 ms
+2023-04-18 20:26:38,295 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 20:26:38,415 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 20:26:38,423 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:26:38,425 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 20:26:38,427 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 0.778 seconds (JVM running for 473.45)
+2023-04-18 20:26:38,430 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2023-04-18 20:26:39,899 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-18 20:26:40,117 INFO [Thread-25] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:26:40,119 INFO [Thread-25] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-04-18 20:26:40,122 INFO [Thread-25] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:26:40,123 INFO [Thread-25] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:26:40,250 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 55240 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 20:26:40,250 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 20:26:40,422 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 20:26:40,422 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 20:26:40,430 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-04-18 20:26:40,554 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 20:26:40,555 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:26:40,555 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 20:26:40,555 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 20:26:40,576 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 20:26:40,576 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 324 ms
+2023-04-18 20:26:40,770 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 20:26:40,866 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 20:26:40,872 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:26:40,874 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 20:26:40,877 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 0.657 seconds (JVM running for 475.899)
+2023-04-18 20:26:40,877 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2023-04-18 20:26:46,446 INFO [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 20:26:46,446 INFO [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 20:26:46,448 INFO [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 0 ms
+2023-04-18 20:26:46,450 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:26:46,453 INFO [http-nio-8080-exec-3] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-3 - Starting...
+2023-04-18 20:26:46,456 INFO [http-nio-8080-exec-3] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-3 - Start completed.
+2023-04-18 20:26:46,457 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:26:46,463 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 20:26:46,466 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:26:46,468 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:26:46,477 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:26:46,479 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 20:26:46,482 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:26:46,483 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:26:46,484 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:26:46,485 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 20:26:46,487 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:26:46,488 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:26:46,489 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:26:46,489 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:26:46,492 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:26:46,493 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:26:46,493 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:26:46,494 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:26:46,495 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:26:46,495 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:26:46],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 20:28:54,978 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:54],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:28:54,980 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:54],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:28:54,982 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:54],访问了[com.nc.nccommunity.service.LikeService.like].
+2023-04-18 20:28:54,985 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:54],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:28:54,993 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:54],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:28:56,903 INFO [http-nio-8080-exec-10] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:56],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:28:56,905 INFO [http-nio-8080-exec-10] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:56],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:28:56,907 INFO [http-nio-8080-exec-10] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:56],访问了[com.nc.nccommunity.service.LikeService.like].
+2023-04-18 20:28:56,909 INFO [http-nio-8080-exec-10] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:56],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:28:56,911 INFO [http-nio-8080-exec-10] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:56],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:28:59,113 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:59],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:28:59,115 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:59],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:28:59,116 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:59],访问了[com.nc.nccommunity.service.LikeService.like].
+2023-04-18 20:28:59,118 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:59],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:28:59,118 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:28:59],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:29:06,473 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:06],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:29:06,474 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:06],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:29:06,476 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:06],访问了[com.nc.nccommunity.service.LikeService.like].
+2023-04-18 20:29:06,477 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:06],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:29:06,479 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:06],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:29:20,237 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:20],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:29:20,239 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:20],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:29:20,240 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:20],访问了[com.nc.nccommunity.service.LikeService.like].
+2023-04-18 20:29:20,242 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:20],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:29:20,242 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:20],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:29:25,595 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:25],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:29:25,598 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:25],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:29:25,599 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:25],访问了[com.nc.nccommunity.service.LikeService.like].
+2023-04-18 20:29:25,601 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:25],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:29:25,602 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:25],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:29:29,388 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:29:29,391 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:29:29,392 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 20:29:29,394 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:29:29,395 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:29:29,396 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:29:29,397 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 20:29:29,399 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:29:29,400 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:29:29,400 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:29:29,402 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 20:29:29,403 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:29:29,407 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:29:29,407 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:29:29,408 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:29:29,410 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:29:29,411 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:29:29,411 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:29:29,413 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:29:29,413 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.LikeService.ifLiked].
+2023-04-18 20:29:29,415 INFO [http-nio-8080-exec-2] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:29:29],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 20:32:17,315 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:32:17],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:32:17,318 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:32:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:32:17,322 INFO [http-nio-8080-exec-5] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:32:17],访问了[com.nc.nccommunity.service.UserService.logout].
+2023-04-18 20:32:17,334 INFO [http-nio-8080-exec-4] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:32:17],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:32:17,372 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:32:17],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:33:13,482 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-18 20:33:13,709 INFO [Thread-29] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:33:13,709 INFO [Thread-29] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-04-18 20:33:13,711 INFO [Thread-29] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-18 20:33:13,722 INFO [Thread-29] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:33:13,724 INFO [Thread-29] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:33:13,840 INFO [Thread-29] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-3 - Shutdown initiated...
+2023-04-18 20:33:13,841 INFO [Thread-29] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-3 - Shutdown completed.
+2023-04-18 20:33:13,960 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 55240 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 20:33:13,960 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 20:33:14,129 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 20:33:14,129 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 20:33:14,137 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-04-18 20:33:14,264 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 20:33:14,265 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:33:14,265 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 20:33:14,265 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 20:33:14,286 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 20:33:14,286 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 324 ms
+2023-04-18 20:33:14,474 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 20:33:14,564 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 20:33:14,570 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 20:33:14,571 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 20:33:14,574 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 0.647 seconds (JVM running for 869.596)
+2023-04-18 20:33:14,574 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2023-04-18 20:33:26,318 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 20:33:26,318 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 20:33:26,319 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2023-04-18 20:33:26,321 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:33:26,324 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-4 - Starting...
+2023-04-18 20:33:26,328 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-4 - Start completed.
+2023-04-18 20:33:26,330 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 20:33:26,334 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 20:33:26,336 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:26,338 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:26,348 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:26,349 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:26,350 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:26,351 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:26,352 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:26,355 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:26,356 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:26,357 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:26,358 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:26,359 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:26,360 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:26,363 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:26,364 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:26,365 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:26,366 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:26,368 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:26,369 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:26,370 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:26],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:57,615 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.UserService.getLoginTicketByTicket].
+2023-04-18 20:33:57,622 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 20:33:57,623 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:57,626 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:57,627 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 20:33:57,631 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:57,633 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:57,634 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 20:33:57,635 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:57,637 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:57,638 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:57,639 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:57,640 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:33:57,641 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:33:57,642 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:33:57],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 20:54:17,601 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 20:54:17,604 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:54:17,607 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:54:17,608 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 20:54:17,610 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:54:17,612 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:54:17,612 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 20:54:17,614 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:54:17,616 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:54:17,616 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:54:17,618 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:54:17,619 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 20:54:17,620 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 20:54:17,621 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 20:54:17],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 20:57:30,819 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-4 - Shutdown initiated...
+2023-04-18 20:57:30,821 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-4 - Shutdown completed.
+2023-04-18 21:09:01,634 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 30096 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 21:09:01,635 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 21:09:01,668 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18 21:09:01,668 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18 21:09:02,176 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 21:09:02,178 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 21:09:02,200 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-04-18 21:09:02,694 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 21:09:02,701 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 21:09:02,702 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 21:09:02,702 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 21:09:02,773 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 21:09:02,774 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1104 ms
+2023-04-18 21:09:03,448 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 21:09:03,706 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 21:09:03,720 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 21:09:03,733 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 21:09:03,740 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 2.416 seconds (JVM running for 3.219)
+2023-04-18 21:09:15,718 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 21:09:15,719 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 21:09:15,720 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2023-04-18 21:09:15,750 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:15],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 21:09:15,763 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-04-18 21:09:15,855 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-04-18 21:09:15,896 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:15],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:09:15,902 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:15],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:09:16,350 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:16],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 21:09:16,355 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:09:16,357 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:16],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:09:16,358 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:16],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 21:09:16,362 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:09:16,363 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:16],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:09:16,364 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:09:16,367 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:16],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:09:16,368 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:16],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:09:16,370 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:16],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:09:16,371 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:09:16],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 21:10:11,862 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 21:10:11,877 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 21:10:11,881 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:10:11,884 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:10:11,886 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:10:11,888 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:10:11,890 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:10:11,894 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:10:11,895 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:10:11,898 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:10:11,899 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:10:11,904 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:10:11,905 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:10:11,908 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:10:11,909 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:10:11,910 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:10:11,911 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:10:11,914 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:10:11,915 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:10:11,916 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:10:11,917 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:10:11,918 INFO [http-nio-8080-exec-7] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:10:11],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:16:23,296 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-04-18 21:16:23,301 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-04-18 21:16:26,110 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 51920 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 21:16:26,111 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 21:16:26,153 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18 21:16:26,153 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18 21:16:26,640 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 21:16:26,641 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 21:16:26,663 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-04-18 21:16:27,168 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 21:16:27,174 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 21:16:27,175 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 21:16:27,175 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 21:16:27,252 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 21:16:27,253 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1099 ms
+2023-04-18 21:16:27,928 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 21:16:28,175 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 21:16:28,188 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 21:16:28,203 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 21:16:28,211 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 2.413 seconds (JVM running for 3.233)
+2023-04-18 21:16:34,555 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 21:16:34,556 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 21:16:34,557 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2023-04-18 21:16:34,586 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:34],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 21:16:34,608 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-04-18 21:16:34,698 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-04-18 21:16:34,742 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:34],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 21:16:34,750 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:34],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:16:34,756 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:34],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:16:35,225 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:16:35,228 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:16:35,230 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:16:35,231 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:16:35,232 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:16:35,235 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:16:35,236 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:16:35,237 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:16:35,238 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:16:35,241 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:16:35,241 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:16:35,244 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:16:35,245 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:16:35,247 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:16:35,249 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:16:35,251 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:16:35,252 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:16:35,254 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:16:35],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:20,096 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 21:17:20,100 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:20,102 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:20,104 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 21:17:20,109 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:20,112 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:20,113 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 21:17:20,115 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:20,117 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:20,118 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:20,120 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:20,122 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:20,124 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:20,125 INFO [http-nio-8080-exec-6] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:20],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 21:17:54,788 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 21:17:54,791 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 21:17:54,796 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:54,799 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:54,800 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:54,803 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:54,804 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:54,805 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:54,806 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:54,808 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:54,809 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:54,811 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:54,813 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:54,815 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:54,816 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:54,818 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:54,818 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:54,821 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:54,822 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:54,824 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:17:54,825 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:17:54,828 INFO [http-nio-8080-exec-3] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:17:54],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:20:39,649 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 21:20:39,652 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:20:39,654 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:20:39,655 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 21:20:39,656 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:20:39,659 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:20:39,659 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 21:20:39,661 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:20:39,662 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:20:39,663 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:20:39,665 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:20:39,667 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:20:39,669 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:20:39,670 INFO [http-nio-8080-exec-9] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:20:39],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 21:28:52,166 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-04-18 21:28:52,172 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-04-18 21:45:04,508 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 55804 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 21:45:04,509 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 21:45:04,544 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18 21:45:04,544 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18 21:45:05,049 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 21:45:05,052 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 21:45:05,083 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2023-04-18 21:45:05,567 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 21:45:05,573 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 21:45:05,574 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 21:45:05,574 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 21:45:05,643 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 21:45:05,644 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1099 ms
+2023-04-18 21:45:06,338 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 21:45:06,576 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 21:45:06,589 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 21:45:06,601 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 21:45:06,609 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 2.403 seconds (JVM running for 3.305)
+2023-04-18 21:45:51,641 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 21:45:51,642 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 21:45:51,642 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 0 ms
+2023-04-18 21:45:51,675 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:51],访问了[com.nc.nccommunity.service.DiscussPostService.findDiscussPost].
+2023-04-18 21:45:51,689 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-04-18 21:45:51,793 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-04-18 21:45:51,840 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:51],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:45:51,846 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:51],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:45:52,305 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:52],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 21:45:52,310 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:52],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:45:52,313 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:52],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:45:52,314 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:52],访问了[com.nc.nccommunity.service.CommentService.findCommentsByEntity].
+2023-04-18 21:45:52,316 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:52],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:45:52,318 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:52],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:45:52,319 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:52],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:45:52,321 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:52],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:45:52,321 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:52],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 21:45:52,324 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:52],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 21:45:52,324 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 21:45:52],访问了[com.nc.nccommunity.service.CommentService.findCountByEntity].
+2023-04-18 21:52:31,036 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-04-18 21:52:31,042 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-04-18 22:18:34,236 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:55] Starting NcCommunityApplication using Java 1.8.0_362 on LAPTOP-A6V3KFOE with PID 39192 (C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes started by Lenovo in C:\Users\Lenovo\Desktop\Java\NcCommunity)
+2023-04-18 22:18:34,237 INFO [restartedMain] c.n.n.NcCommunityApplication [SpringApplication.java:631] No active profile set, falling back to 1 default profile: "default"
+2023-04-18 22:18:34,270 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-18 22:18:34,270 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-18 22:18:34,751 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-18 22:18:34,752 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-18 22:18:34,775 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-04-18 22:18:35,266 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-04-18 22:18:35,272 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-18 22:18:35,273 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-04-18 22:18:35,273 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-18 22:18:35,344 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-04-18 22:18:35,345 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1074 ms
+2023-04-18 22:18:36,075 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2023-04-18 22:18:36,322 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-04-18 22:18:36,334 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-18 22:18:36,347 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2023-04-18 22:18:36,355 INFO [restartedMain] c.n.n.NcCommunityApplication [StartupInfoLogger.java:61] Started NcCommunityApplication in 2.431 seconds (JVM running for 3.231)
+2023-04-18 22:18:44,645 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-18 22:18:44,645 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2023-04-18 22:18:44,646 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2023-04-18 22:18:44,673 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:44],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostRows].
+2023-04-18 22:18:44,694 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-04-18 22:18:44,788 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-04-18 22:18:44,827 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:44],访问了[com.nc.nccommunity.service.DiscussPostService.getDiscussPostList].
+2023-04-18 22:18:44,835 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:44],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 22:18:44,840 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:44],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 22:18:45,310 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 22:18:45,313 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 22:18:45,314 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 22:18:45,315 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 22:18:45,316 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 22:18:45,318 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 22:18:45,319 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 22:18:45,321 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 22:18:45,321 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 22:18:45,323 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 22:18:45,324 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 22:18:45,326 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 22:18:45,326 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 22:18:45,329 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 22:18:45,330 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 22:18:45,332 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 22:18:45,333 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.UserService.getUserById].
+2023-04-18 22:18:45,334 INFO [http-nio-8080-exec-1] c.n.n.a.ServiceLogAspect [ServiceLogAspect.java:33] 用户[0:0:0:0:0:0:0:1],在[2023-04-18 22:18:45],访问了[com.nc.nccommunity.service.LikeService.countLike].
+2023-04-18 22:20:51,838 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-04-18 22:20:51,844 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.

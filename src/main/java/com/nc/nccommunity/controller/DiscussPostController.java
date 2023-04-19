@@ -60,7 +60,7 @@ public class DiscussPostController implements CommunityConstant {
 		model.addAttribute("user", user);
 		
 		//like
-		long likeCount = likeService.countLike(ENTITY_TYPE_POST, id);
+		long likeCount = likeService.countLikeEntity(ENTITY_TYPE_POST, id);
 		model.addAttribute("likeCount", likeCount);
 		
 		int likeStatus = hostHolder.getUser()!=null ? likeService.ifLiked(hostHolder.getUser().getId(), ENTITY_TYPE_POST, id)?1:0 : 0;
@@ -84,7 +84,7 @@ public class DiscussPostController implements CommunityConstant {
 				commentVo.put("comment", comment);
 				
 				//like
-				likeCount = likeService.countLike(ENTITY_TYPE_COMMENT, comment.getId());
+				likeCount = likeService.countLikeEntity(ENTITY_TYPE_COMMENT, comment.getId());
 				commentVo.put("likeCount", likeCount);
 				
 				likeStatus = hostHolder.getUser()!=null ? likeService.ifLiked(hostHolder.getUser().getId(), ENTITY_TYPE_COMMENT, comment.getId())?1:0 : 0;
@@ -101,7 +101,7 @@ public class DiscussPostController implements CommunityConstant {
 						User target = reply.getTargetId() == 0 ? null : userService.getUserById(reply.getTargetId());
 						replyVo.put("target", target);
 						//like
-						likeCount = likeService.countLike(ENTITY_TYPE_COMMENT, reply.getId());
+						likeCount = likeService.countLikeEntity(ENTITY_TYPE_COMMENT, reply.getId());
 						replyVo.put("likeCount", likeCount);
 						likeStatus = hostHolder.getUser()!=null ? likeService.ifLiked(hostHolder.getUser().getId(), ENTITY_TYPE_COMMENT, reply.getId())?1:0 : 0;
 						replyVo.put("likeStatus", likeStatus);

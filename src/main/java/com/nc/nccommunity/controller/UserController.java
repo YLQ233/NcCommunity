@@ -2,6 +2,7 @@ package com.nc.nccommunity.controller;
 
 import com.nc.nccommunity.annotation.LoginRequired;
 import com.nc.nccommunity.entity.User;
+import com.nc.nccommunity.service.LikeService;
 import com.nc.nccommunity.service.UserService;
 import com.nc.nccommunity.util.CommunityUtil;
 import com.nc.nccommunity.util.HostHolder;
@@ -31,6 +32,8 @@ public class UserController {
 	HostHolder hostHolder;
 	@Autowired
 	UserService userService;
+	@Autowired
+	LikeService likeService;
 	@Value("${community.path.domain}")
 	String domain;
 	@Value("${server.servlet.context-path}")
@@ -109,6 +112,18 @@ public class UserController {
 			model.addAttribute("newPasswordMsg", map.get("newPasswordMsg"));
 			return "/site/setting";
 		}
+	}
+	
+	@GetMapping("/profile/{userId}")
+	public String getProfilePage(@PathVariable("userId")int userId, Model model){
+		User user = userService.getUserById(userId);
+		if(user == null)	throw new RuntimeException("该用户不存在!");
+		
+		int likeCount = likeService.countLikeUser(userId);
+		model.addAttribute("likeCount",likeCount);
+		model.addAttribute("user",user);
+		
+		return "/site/profile";
 	}
 	
 	

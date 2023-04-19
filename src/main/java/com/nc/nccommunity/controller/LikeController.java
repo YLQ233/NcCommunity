@@ -20,10 +20,10 @@ public class LikeController {
 	
 	@PostMapping("/like")
 	@ResponseBody
-	public String like(int entityType, int entityId){
+	public String like(int entityType, int entityId, int entityUserId){
 		User user = hostHolder.getUser();
-		likeService.like(user.getId(), entityType, entityId);
-		long count = likeService.countLike(entityType, entityId);
+		likeService.like(user.getId(), entityType, entityId, entityUserId);
+		long count = likeService.countLikeEntity(entityType, entityId);
 		int status = likeService.ifLiked(user.getId(), entityType, entityId)?1:0;
 		
 		Map<String,Object> map = new HashMap<String,Object>();
