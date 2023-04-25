@@ -1,9 +1,12 @@
 package com.nc.nccommunity.controller;
 
 import com.nc.nccommunity.annotation.LoginRequired;
+import com.nc.nccommunity.entity.Comment;
+import com.nc.nccommunity.entity.DiscussPost;
+import com.nc.nccommunity.entity.Page;
 import com.nc.nccommunity.entity.User;
-import com.nc.nccommunity.service.LikeService;
-import com.nc.nccommunity.service.UserService;
+import com.nc.nccommunity.service.*;
+import com.nc.nccommunity.util.CommunityConstant;
 import com.nc.nccommunity.util.CommunityUtil;
 import com.nc.nccommunity.util.HostHolder;
 import lombok.extern.slf4j.Slf4j;
@@ -20,6 +23,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static com.sun.activation.registries.LogSupport.log;
@@ -27,19 +33,26 @@ import static com.sun.activation.registries.LogSupport.log;
 @Slf4j
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController implements CommunityConstant {
 	@Autowired
-	HostHolder hostHolder;
+	private HostHolder hostHolder;
 	@Autowired
-	UserService userService;
+	private UserService userService;
 	@Autowired
-	LikeService likeService;
+	private LikeService likeService;
+	@Autowired
+	private FollowService followService;
+	@Autowired
+	private CommentService commentService;
+	@Autowired
+	private DiscussPostService discussPostService;
+	
 	@Value("${community.path.domain}")
-	String domain;
+	private String domain;
 	@Value("${server.servlet.context-path}")
-	String contextPath;
+	private String contextPath;
 	@Value("${community.path.upload}")
-	String uploadPath;
+	private String uploadPath;
 	
 	@LoginRequired
 	@GetMapping("/setting")
@@ -99,6 +112,7 @@ public class UserController {
 		}
 	}
 	
+	@LoginRequired
 	@PostMapping("/updatePassword")
 	public String updatePassword(String oldpw, String newpw, Model model){
 		User user = hostHolder.getUser();
@@ -118,13 +132,77 @@ public class UserController {
 	public String getProfilePage(@PathVariable("userId")int userId, Model model){
 		User user = userService.getUserById(userId);
 		if(user == null)	throw new RuntimeException("该用户不存在!");
+		model.addAttribute("user",user);
 		
 		int likeCount = likeService.countLikeUser(userId);
 		model.addAttribute("likeCount",likeCount);
-		model.addAttribute("user",user);
+		
+		long followeeCount = followService.getFolloweeCount(userId, ENTITY_TYPE_USER);
+		long followerCount = followService.getFollowerCount(ENTITY_TYPE_USER, userId);
+		model.addAttribute("followeeCount",followeeCount);
+		model.addAttribute("followerCount",followerCount);
+		
+		boolean hasFollowed = false;
+		if (hostHolder.getUser() != null) {
+			hasFollowed = followService.isFollower(hostHolder.getUser().getId(), ENTITY_TYPE_USER, userId);
+		}
+		model.addAttribute("hasFollowed", hasFollowed);
 		
 		return "/site/profile";
 	}
 	
+	// 我(TA)的帖子
+	@RequestMapping(path = "/mypost/{userId}", method = RequestMethod.GET)
+	public String getMyPost(@PathVariable("userId") int userId, Page page, Model model) {
+		User user = userService.getUserById(userId);
+		if(user == null)	throw new RuntimeException("用户不存在！");
+		model.addAttribute("user", user);
+		
+		// 分页信息
+		page.setPath("/user/mypost/" + userId);
+		page.setRows(discussPostService.getDiscussPostRows(userId));
+		
+		// 帖子列表
+		List<DiscussPost> list = discussPostService.getDiscussPostList(userId, page.getOffset(), page.getLimit());
+		List<Map<String,Object>> discussVOList = new ArrayList<Map<String,Object>>();
+		if(list != null)
+		for(DiscussPost post : list) {
+			Map<String,Object> map = new HashMap();
+			map.put("discussPost", post);
+			map.put("likeCount", likeService.countLikeEntity(ENTITY_TYPE_POST, post.getId()));
+			discussVOList.add(map);
+		}
+		model.addAttribute("discussPosts", discussVOList);
+		
+		return "site/my-post";
+	}
 	
+	// 我(TA)的回复
+	@RequestMapping(path = "/myreply/{userId}", method = RequestMethod.GET)
+	public String getMyReply(@PathVariable("userId") int userId, Page page, Model model) {
+		User user = userService.getUserById(userId);
+		if(user == null)	throw new RuntimeException("用户不存在！");
+		model.addAttribute("user", user);
+		
+		// 分页信息
+		page.setPath("/user/myreply/" + userId);
+		page.setRows(commentService.findUserCount(userId));
+		
+		// 回复列表
+		List<Comment> commentList = commentService.findUserComments(userId, page.getOffset(), page.getLimit());
+		List<Map<String, Object>> commentVOList = new ArrayList<>();
+		if (commentList != null) {
+			for (Comment comment : commentList) {
+				Map<String, Object> map = new HashMap<>();
+				map.put("comment", comment);
+				DiscussPost post = discussPostService.getDiscussPostById(comment.getEntityId());
+				map.put("discussPost", post);
+				commentVOList.add(map);
+			}
+		}
+		model.addAttribute("comments", commentVOList);
+		
+		
+		return "site/my-reply";
+	}
 }

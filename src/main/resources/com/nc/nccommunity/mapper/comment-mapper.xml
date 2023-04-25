@@ -11,7 +11,7 @@
         user_id, entity_type, entity_id, target_id, content, status, create_time
     </sql>
 
-    <!--    List<Comment> selectCommentsByEntity(int entityType, int entityId, int offset, int limit);-->
+<!--    List<Comment> selectCommentsByEntity(int entityType, int entityId, int offset, int limit);-->
     <select id="selectCommentsByEntity" resultType="Comment">
         select <include refid="selectFields"></include>
             from comment
@@ -31,5 +31,33 @@
         insert into comment (<include refid="insertFields"></include>)
         values(#{userId},#{entityType},#{entityId},#{targetId},#{content},#{status},#{createTime})
     </insert>
+
+
+<!--    List<Comment> selectCommentsByUserId(int userId);-->
+    <select id="selectCommentsByUserId" resultType="Comment">
+        select <include refid="selectFields"></include>
+        from comment
+        where status != 1
+        and user_id = #{userId}
+        and entity_type = 1
+        and exists ( select id from discuss_post where id = comment.entity_id and status != 2 )
+        order by create_time desc
+        limit #{offset}, #{limit}
+    </select>
+
+<!--  Comment selectCommentById(int id);-->
+    <select id="selectCommentById" resultType="Comment">
+        select <include refid="selectFields"></include> from comment
+        where id = #{id}
+    </select>
+
+<!--    int selectCountByUser(int userId);-->
+    <select id="selectCountByUser" resultType="integer">
+        select count(id) from comment
+        where status != 1
+          and user_id = #{userId}
+          and entity_type = 1
+          and exists ( select id from discuss_post where id = comment.entity_id and status != 2 )
+    </select>
 
 </mapper>

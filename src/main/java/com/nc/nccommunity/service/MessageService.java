@@ -52,5 +52,21 @@ public class MessageService {
     public int deleteMessage(int id){
         return messageMapper.updateMessageStatus(Arrays.asList(new Integer[]{id}), 2);
     }
-
+    
+    public Message getLatestMsg(int userId, String topic){
+        return messageMapper.selectLatestMsg(userId, topic);
+    }
+    
+    public int getGroupCnt(int userId, String topic){
+        return messageMapper.selectGroupCnt(userId, topic);
+    }
+    
+    public int getUnreadMsgCnt(int userId, String topic){
+        return messageMapper.selectUnreadMsgCnt(userId, topic);
+    }
+    
+    public List<Message> getMsgList(int userId, String topic, int offset, int limit){
+        return messageMapper.selectMsgList(userId, topic, offset, limit);
+    }
+    
 }

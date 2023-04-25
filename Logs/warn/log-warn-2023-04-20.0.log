@@ -1,0 +1,1492 @@
+2023-04-20 00:21:02,870 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "profile.html"]
+2023-04-20 01:00:45,626 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "my-post.html"]
+2023-04-20 02:51:59,253 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,254 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:314)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:293)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:174)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,254 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,255 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,256 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,256 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,256 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,257 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,257 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,258 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,258 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,259 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,259 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,259 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,260 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,260 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,261 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:51:59,261 WARN [Thread-11] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,681 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,681 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-nioEventLoop-9-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:314)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:293)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:174)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,681 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,682 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,682 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,682 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,682 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,684 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,684 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,684 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,685 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,685 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,685 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,686 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,686 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,686 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,687 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 02:56:12,687 WARN [Thread-22] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-7-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:03:13,668 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,688 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,706 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,723 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,738 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,754 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,767 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,783 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,797 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,812 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,826 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,843 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,856 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,871 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,885 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,903 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,918 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,934 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,950 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:13,966 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,024 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,037 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,051 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,064 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,081 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,101 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,114 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,128 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,142 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,155 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,170 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,185 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,200 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,212 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,226 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,240 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,253 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,269 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,283 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:15,297 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:23,861 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:23,873 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:23,886 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:23,898 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:23,917 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:23,930 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:23,943 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:23,956 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:23,970 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:23,983 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:23,995 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:24,008 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:24,022 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:24,035 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:24,048 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:24,061 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:24,075 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:24,088 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:24,104 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:24,117 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,542 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,555 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,572 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,583 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,594 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,605 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,617 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,628 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,642 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,653 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,667 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,678 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,691 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,703 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,715 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,727 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,741 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,752 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,766 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:25,780 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,326 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,336 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,346 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,357 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,366 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,378 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,388 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,401 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,413 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,424 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,437 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,450 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,463 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,474 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,487 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,499 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,512 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:26,524 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,560 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,582 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,594 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,606 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,619 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,632 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,645 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,658 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,671 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,683 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,696 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,711 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,724 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,738 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,751 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,763 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,777 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,789 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,803 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:27,815 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,636 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,655 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,672 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,688 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,701 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,714 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,728 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,743 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,756 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,770 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,784 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,796 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,808 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,822 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,834 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,847 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,861 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,874 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,894 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:35,915 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,046 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,056 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,068 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,079 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,093 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,104 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,116 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,128 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,140 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,153 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,165 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,178 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,189 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,201 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,213 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,225 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,238 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,249 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,262 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:03:56,274 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,765 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,776 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,786 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,798 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,809 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,820 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,831 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,844 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,855 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,868 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,881 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,893 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,906 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,917 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,930 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,943 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,955 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,968 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,980 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:00,994 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,032 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,059 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,070 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,081 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,090 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,099 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,109 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,120 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,132 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,144 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,156 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,169 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,182 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,195 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,208 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,221 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,233 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,245 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,259 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:02,269 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,303 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,315 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,328 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,339 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,352 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,364 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,375 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,387 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,400 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,411 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,424 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,435 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,447 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,460 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,471 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,483 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,496 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,508 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,519 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:07,533 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,134 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,144 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,153 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,163 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,173 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,183 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,193 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,202 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,212 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,222 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,231 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,240 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,251 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,261 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,271 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,280 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,289 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,298 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,307 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:04:31,317 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,357 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,368 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,379 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,390 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,403 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,415 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,427 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,437 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,449 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,462 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,474 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,558 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,571 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,588 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,600 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,612 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,627 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,643 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,654 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:01,664 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.ClassCastException: java.lang.Integer cannot be cast to com.nc.nccommunity.entity.User]
+2023-04-20 04:05:56,655 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:314)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:293)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:174)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,656 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,656 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,657 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,657 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,658 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,658 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,658 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,659 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,659 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,660 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,660 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,660 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,661 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,661 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,662 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:56,662 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:05:57,374 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcConfig': Unsatisfied dependency expressed through field 'loginTicketInterceptor'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginTicketInterceptor' defined in file [C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes\com\nc\nccommunity\controller\interceptor\LoginTicketInterceptor.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.nc.nccommunity.controller.interceptor.LoginTicketInterceptor] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7042ef3a]
+2023-04-20 04:14:47,017 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,017 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:314)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:293)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:174)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,018 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,018 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,019 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,019 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,019 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,020 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,020 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,020 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,022 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,022 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,022 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,022 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,023 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,023 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,023 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,024 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 04:14:47,717 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcConfig': Unsatisfied dependency expressed through field 'loginTicketInterceptor'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginTicketInterceptor' defined in file [C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes\com\nc\nccommunity\controller\interceptor\LoginTicketInterceptor.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.nc.nccommunity.controller.interceptor.LoginTicketInterceptor] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@253a26f5]
+2023-04-20 15:48:59,898 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s117ms782µs200ns).
+2023-04-20 15:50:15,283 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s723ms100µs).
+2023-04-20 17:48:28,130 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed<EOL>]
+2023-04-20 17:49:11,280 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed<EOL>]
+2023-04-20 17:53:41,428 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535 5.7.8 authentication failed<EOL>]
+2023-04-20 18:01:12,287 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcConfig': Unsatisfied dependency expressed through field 'loginTicketInterceptor'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginTicketInterceptor' defined in file [C:\Users\Lenovo\Desktop\Java\NcCommunity\target\classes\com\nc\nccommunity\controller\interceptor\LoginTicketInterceptor.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.nc.nccommunity.controller.interceptor.LoginTicketInterceptor] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@224fc860]
+2023-04-20 18:17:05,237 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.reflect.UndeclaredThrowableException]
+2023-04-20 18:22:48,384 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.reflect.UndeclaredThrowableException]
+2023-04-20 18:24:21,002 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s922ms910µs900ns).
+2023-04-20 18:24:30,549 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.reflect.UndeclaredThrowableException]
+2023-04-20 18:39:39,688 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.IllegalArgumentException]
+2023-04-20 18:41:46,187 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s253ms385µs).
+2023-04-20 18:41:46,204 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.IllegalArgumentException: argument type mismatch]
+2023-04-20 18:44:09,194 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.IllegalArgumentException: argument type mismatch]
+2023-04-20 18:51:27,814 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'UserService' available]
+2023-04-20 18:53:36,205 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'UserService' available]
+2023-04-20 18:58:28,971 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.IllegalArgumentException: argument type mismatch]
+2023-04-20 19:00:28,504 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.IllegalArgumentException: argument type mismatch]
+2023-04-20 19:09:08,687 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.NumberFormatException: null]
+2023-04-20 19:57:01,692 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m57s871ms115µs300ns).
+2023-04-20 19:59:04,322 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m2s630ms242µs100ns).
+2023-04-20 19:59:24,187 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.NumberFormatException: null]
+2023-04-20 20:06:23,289 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.NumberFormatException: null]
+2023-04-20 20:20:05,156 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s208ms120µs800ns).
+2023-04-20 20:20:05,169 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.reflect.UndeclaredThrowableException]
+2023-04-20 20:20:35,170 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s174ms343µs600ns).
+2023-04-20 20:21:17,849 WARN [main] c.n.n.logTest [logTest.java:22] warn
+2023-04-20 20:24:06,451 WARN [main] c.n.n.logTest [logTest.java:22] warn
+2023-04-20 20:26:23,010 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m1s972ms930µs600ns).
+2023-04-20 20:26:23,024 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.reflect.UndeclaredThrowableException]
+2023-04-20 20:35:55,215 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m17s80ms897µs600ns).
+2023-04-20 20:36:58,306 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:208] Resolved [java.lang.reflect.UndeclaredThrowableException]
+2023-04-20 20:37:28,305 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s89ms828µs800ns).
+2023-04-20 20:50:56,163 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:314)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:293)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:174)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,164 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,164 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,166 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,166 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,166 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,167 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,167 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,167 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,168 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,168 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,168 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,169 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,169 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,169 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,171 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,171 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,171 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 20:50:56,724 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Lcom/nc/nccommunity/service/UserService;
+2023-04-20 22:28:13,149 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:314)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:293)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:174)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,149 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,150 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,150 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,150 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,151 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,151 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,151 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,152 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,152 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,153 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,153 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,153 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,154 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,154 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,154 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,155 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)
+2023-04-20 22:28:13,155 WARN [Thread-10] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:750)

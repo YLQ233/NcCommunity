@@ -1,11 +1,9 @@
 package com.nc.nccommunity.dao;
 
 import com.nc.nccommunity.entity.LoginTicket;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Options;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 
+@Deprecated
 public interface LoginTicketMapper {
 	@Insert({"insert into login_ticket(user_id,ticket,status,expired) values (#{userId},#{ticket},#{status},#{expired})"	})
 	@Options(useGeneratedKeys = true, keyProperty = "id")

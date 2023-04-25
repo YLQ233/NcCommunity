@@ -19,15 +19,21 @@ import java.util.Date;
 @Slf4j
 public class ServiceLogAspect {
 	@Pointcut("execution(* com.nc.nccommunity.service.*.*(..))")
-	public void pointcut(){}
+	public void pointcutLog(){}
 	
 	
-	@Before("pointcut()")
+	@Before("pointcutLog()")
 	public void before(JoinPoint joinPoint) {
 		// 用户IP[x.x.x.x],在[time],访问了[com.nowcoder.community.service.xxx()].
 		ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-		HttpServletRequest request = attributes.getRequest();
-		String ip = request.getRemoteHost();
+		String ip;
+		if(attributes != null){
+			HttpServletRequest request = attributes.getRequest();
+			ip = request.getRemoteHost();
+		}else{
+			ip = "通过EventConsumer";
+		}
+		
 		String now = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
 		String target = joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName();
 		log.info(String.format("用户[%s],在[%s],访问了[%s].", ip, now, target));

@@ -5,7 +5,7 @@ import com.nc.nccommunity.entity.Message;
 import java.util.List;
 
 public interface MessageMapper {
-	
+//私信
 	//会话列表
 	List<Message> selectConversations(int userId, int offset, int limit);
 	
@@ -26,5 +26,18 @@ public interface MessageMapper {
 	
 	// 更新消息状态
 	int updateMessageStatus(List ids, int status);
+	
+//系统通知
+	//newest msg
+	Message selectLatestMsg(int userId, String topic);
+	
+	//groupCount
+	int selectGroupCnt(int userId, String topic);
+	
+	//UnreadMsgCnt
+	int selectUnreadMsgCnt(int userId, String topic);
+	
+	//msgList
+	List<Message> selectMsgList(int userId, String topic, int offset, int limit);
 	
 }

@@ -18,8 +18,8 @@ public class LikeService {
 	
 	//like
 	public void like(int userId, int entityType, int entityId, int authorId){
-		String entityKey = RedisUtil.getEntityRedisKey(entityType,entityId);
-		String userKey = RedisUtil.getUserRedisKey(authorId);
+		String entityKey = RedisUtil.getLikeEntityRedisKey(entityType,entityId);
+		String userKey = RedisUtil.getLikeUserRedisKey(authorId);
 		Boolean isMember = template.opsForSet().isMember(entityKey,userId);
 		template.execute(new SessionCallback() {
 			@Override
@@ -39,7 +39,7 @@ public class LikeService {
 	
 	//count
 	public long countLikeEntity(int entityType, int entityId){
-		String key = RedisUtil.getEntityRedisKey(entityType,entityId);
+		String key = RedisUtil.getLikeEntityRedisKey(entityType,entityId);
 		BoundSetOperations op = template.boundSetOps(key);
 		
 		long cnt = op.size();
@@ -49,14 +49,14 @@ public class LikeService {
 	
 	//if liked
 	public boolean ifLiked(int userId, int entityType, int entityId){
-		String key = RedisUtil.getEntityRedisKey(entityType,entityId);
+		String key = RedisUtil.getLikeEntityRedisKey(entityType,entityId);
 		BoundSetOperations op = template.boundSetOps(key);
 		return op.isMember(userId);
 	}
 	
 	//user收到的赞数量
 	public Integer countLikeUser(int userId){
-		String userKey = RedisUtil.getUserRedisKey(userId);
+		String userKey = RedisUtil.getLikeUserRedisKey(userId);
 		Integer	i = (Integer) template.opsForValue().get(userKey);
 		return i==null ? 0 : i.intValue();
 	}

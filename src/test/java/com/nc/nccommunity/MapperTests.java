@@ -1,34 +1,46 @@
 package com.nc.nccommunity;
 
-import com.nc.nccommunity.dao.DiscussPostMapper;
-import com.nc.nccommunity.dao.LoginTicketMapper;
-import com.nc.nccommunity.dao.MessageMapper;
-import com.nc.nccommunity.dao.UserMapper;
-import com.nc.nccommunity.entity.DiscussPost;
-import com.nc.nccommunity.entity.LoginTicket;
-import com.nc.nccommunity.entity.Message;
-import com.nc.nccommunity.entity.User;
+import com.nc.nccommunity.dao.*;
+import com.nc.nccommunity.entity.*;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.Date;
 import java.util.List;
 
+@ExtendWith(SpringExtension.class)
 @SpringBootTest
+@ContextConfiguration(classes = NcCommunityApplication.class)
 class MapperTests {
 	
 	@Autowired
 	private UserMapper userMapper;
-	
 	@Autowired
 	private DiscussPostMapper discussPostMapper;
-	
 	@Autowired
 	private LoginTicketMapper loginTicketMapper;
-	
 	@Autowired
 	private MessageMapper messageMapper;
+	@Autowired
+	private CommentMapper commentMapper;
+	
+	@Test
+	public void testComment(){
+		List<Comment> commentList = commentMapper.selectCommentsByUserId(153, 0, 100);
+		Comment comment = commentMapper.selectCommentById(1);
+		int count = commentMapper.selectCountByUser(153);
+		
+		for (Comment c : commentList) {
+			System.out.println(c.getContent());
+		}
+		
+		System.out.println("comment = " + comment.getContent());
+		System.out.println("count = " + count);
+	}
 	
 	@Test
 	public void testSelectUser() {
@@ -57,17 +69,17 @@ class MapperTests {
 		System.out.println(user.getId());
 	}
 	
-	@Test
-	public void updateUser() {
-		int rows = userMapper.updateStatus(150, 1);
-		System.out.println(rows);
-		
-		rows = userMapper.updateHeader(150, "http://www.nowcoder.com/102.png");
-		System.out.println(rows);
-		
-		rows = userMapper.updatePassword(150, "hello");
-		System.out.println(rows);
-	}
+//	@Test
+//	public void updateUser() {
+//		int rows = userMapper.updateStatus(150, 1);
+//		System.out.println(rows);
+//
+//		rows = userMapper.updateHeader(150, "http://www.nowcoder.com/102.png");
+//		System.out.println(rows);
+//
+//		rows = userMapper.updatePassword(150, "hello");
+//		System.out.println(rows);
+//	}
 	
 	@Test
 	public void testSelectPosts() {
@@ -80,27 +92,6 @@ class MapperTests {
 		System.out.println(rows);
 	}
 	
-	@Test
-	public void testInsertLoginTicket() {
-		LoginTicket loginTicket = new LoginTicket();
-		loginTicket.setUserId(101);
-		loginTicket.setTicket("abc");
-		loginTicket.setStatus(0);
-		loginTicket.setExpired(new Date(System.currentTimeMillis() + 1000 * 60 * 10));
-		
-		loginTicketMapper.insertLoginTicket(loginTicket);
-	}
-	
-	@Test
-	public void testSelectLoginTicket() {
-		LoginTicket loginTicket = loginTicketMapper.selectByTicket("abc");
-		System.out.println(loginTicket);
-	}
-	
-	@Test
-	public void testUpdateLoginTicket() {
-		loginTicketMapper.updateStatus("abc", 1);
-	}
 	
 	@Test
 	public void testSelectLetters() {
