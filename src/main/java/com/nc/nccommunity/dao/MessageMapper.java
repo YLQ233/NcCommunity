@@ -1,9 +1,11 @@
 package com.nc.nccommunity.dao;
 
 import com.nc.nccommunity.entity.Message;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
+@Mapper
 public interface MessageMapper {
 //私信
 	//会话列表

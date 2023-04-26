@@ -1,9 +1,7 @@
 package com.nc.nccommunity.controller;
 
-import com.nc.nccommunity.entity.Comment;
-import com.nc.nccommunity.entity.DiscussPost;
-import com.nc.nccommunity.entity.Page;
-import com.nc.nccommunity.entity.User;
+import com.nc.nccommunity.entity.*;
+import com.nc.nccommunity.event.EventProducer;
 import com.nc.nccommunity.service.CommentService;
 import com.nc.nccommunity.service.DiscussPostService;
 import com.nc.nccommunity.service.LikeService;
@@ -31,6 +29,8 @@ public class DiscussPostController implements CommunityConstant {
 	private CommentService commentService;
 	@Autowired
 	private LikeService likeService;
+	@Autowired
+	private EventProducer eventProducer;
 	
 	@PostMapping("/add")
 	@ResponseBody
@@ -47,6 +47,14 @@ public class DiscussPostController implements CommunityConstant {
 		// type status score默认0
 		
 		discussPostService.addDiscussPost(discussPost);
+		
+		// 触发发帖事件
+		Event event = new Event()
+				.setTopic(TOPIC_PUBLISH)
+				.setUserId(user.getId())
+				.setEntityType(ENTITY_TYPE_POST)
+				.setEntityId(discussPost.getId());
+		eventProducer.fireEvent(event);
 		
 		return CommunityUtil.getJSONString(0,"发布成功");
 	}

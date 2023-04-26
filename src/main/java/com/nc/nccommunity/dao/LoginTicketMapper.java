@@ -3,6 +3,7 @@ package com.nc.nccommunity.dao;
 import com.nc.nccommunity.entity.LoginTicket;
 import org.apache.ibatis.annotations.*;
 
+@Mapper
 @Deprecated
 public interface LoginTicketMapper {
 	@Insert({"insert into login_ticket(user_id,ticket,status,expired) values (#{userId},#{ticket},#{status},#{expired})"	})

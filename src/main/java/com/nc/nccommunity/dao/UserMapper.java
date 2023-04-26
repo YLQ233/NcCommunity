@@ -3,7 +3,7 @@ package com.nc.nccommunity.dao;
 import com.nc.nccommunity.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
-
+@Mapper
 public interface UserMapper {
 
     User selectById(int id);
