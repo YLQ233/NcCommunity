@@ -56,6 +56,8 @@ public class MessageController implements CommunityConstant {
 		
 		int letterUnreadCount = messageService.findUnreadLetterCount(user.getId(), null);
 		model.addAttribute("letterUnreadCount", letterUnreadCount);
+		int noticeUnreadCount = messageService.getUnreadMsgCnt(user.getId(), null);
+		model.addAttribute("noticeUnreadCount", noticeUnreadCount);
 		
 		return "/site/letter";
 	}
