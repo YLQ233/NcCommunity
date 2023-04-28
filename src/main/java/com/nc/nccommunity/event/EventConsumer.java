@@ -11,10 +11,8 @@ import com.nc.nccommunity.util.CommunityConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.connection.ReactiveStringCommands;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
-
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +21,7 @@ import java.util.Map;
 @Component
 public class EventConsumer implements CommunityConstant{
 	@Autowired
-	MessageService messageService;
+	private MessageService messageService;
 	
 	@Autowired
 	private DiscussPostService discussPostService;
@@ -78,5 +76,22 @@ public class EventConsumer implements CommunityConstant{
 		elasticsearchService.saveDiscussPost(post);
 	}
 	
+	
+	// 消费删帖事件
+	@KafkaListener(topics = {TOPIC_DELETE})
+	public void handleDeleteMessage(ConsumerRecord record) {
+		if (record == null || record.value() == null) {
+			log.error("消息的内容为空!");
+			return;
+		}
+		
+		Event event = JSONObject.parseObject(record.value().toString(), Event.class);
+		if (event == null) {
+			log.error("消息格式错误!");
+			return;
+		}
+		
+		elasticsearchService.deleteDiscussPost(event.getEntityId());
+	}
 	
 }

@@ -40,5 +40,13 @@
     <update id="updateCommentCount">
         update discuss_post set comment_count = #{count} where id = #{id}
     </update>
+<!--    int updatePostType(int postId, int type);-->
+    <update id="updatePostType">
+        update discuss_post set type = #{type} where id = #{postId}
+    </update>
+<!--    int updatePostStatus(int postId, int status);-->
+    <update id="updatePostStatus">
+        update discuss_post set status = #{status} where id = #{postId}
+    </update>
 
 </mapper>

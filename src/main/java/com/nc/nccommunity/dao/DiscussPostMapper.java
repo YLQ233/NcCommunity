@@ -19,5 +19,10 @@ public interface DiscussPostMapper {
 	
 	int updateCommentCount(int id, int count);
 	
+	//置顶
+	int updatePostType(int postId, int type);
+	
+	//加精
+	int updatePostStatus(int postId, int status);
 	
 }

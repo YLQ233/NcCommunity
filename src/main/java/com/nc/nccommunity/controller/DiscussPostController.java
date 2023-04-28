@@ -132,4 +132,55 @@ public class DiscussPostController implements CommunityConstant {
 	}
 	
 	
+	// 置顶
+	@PostMapping("/top")
+	@ResponseBody
+	public String setTop(int id) {
+		discussPostService.updatePostType(id, 1);
+		
+		// 触发发帖事件
+		Event event = new Event()
+				.setTopic(TOPIC_PUBLISH)
+				.setUserId(hostHolder.getUser().getId())
+				.setEntityType(ENTITY_TYPE_POST)
+				.setEntityId(id);
+		eventProducer.fireEvent(event);
+		
+		return CommunityUtil.getJSONString(0);
+	}
+	
+	// 加精
+	@PostMapping("/wonderful")
+	@ResponseBody
+	public String setWonderful(int id) {
+		discussPostService.updatePostStatus(id, 1);
+		
+		// 触发发帖事件
+		Event event = new Event()
+				.setTopic(TOPIC_PUBLISH)
+				.setUserId(hostHolder.getUser().getId())
+				.setEntityType(ENTITY_TYPE_POST)
+				.setEntityId(id);
+		eventProducer.fireEvent(event);
+		
+		return CommunityUtil.getJSONString(0);
+	}
+	
+	// 删除
+	@PostMapping("/delete")
+	@ResponseBody
+	public String setDelete(int id) {
+		discussPostService.updatePostStatus(id, 2);
+		
+		// 触发删帖事件
+		Event event = new Event()
+				.setTopic(TOPIC_DELETE)
+				.setUserId(hostHolder.getUser().getId())
+				.setEntityType(ENTITY_TYPE_POST)
+				.setEntityId(id);
+		eventProducer.fireEvent(event);
+		
+		return CommunityUtil.getJSONString(0);
+	}
+	
 }
