@@ -21,7 +21,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
 	
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-		web.ignoring().antMatchers("/resources/**");
+		web.ignoring().antMatchers("/resources/**","/index");
 	}
 	
 	@Override
@@ -44,6 +44,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
 						AUTHORITY_ADMIN,
 						AUTHORITY_MODERATOR
 				)
+				////////////////////////////////
 				.antMatchers(
 						"/discuss/top",
 						"/discuss/wonderful"
@@ -51,12 +52,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
 				.hasAnyAuthority(
 						AUTHORITY_MODERATOR
 				)
+				////////////////////////////////
 				.antMatchers(
-						"/discuss/delete"
+						"/discuss/delete",
+						"/data/**"
 				)
 				.hasAnyAuthority(
 						AUTHORITY_ADMIN
 				)
+				
 				.anyRequest().permitAll()
 				.and().csrf().disable();
 		

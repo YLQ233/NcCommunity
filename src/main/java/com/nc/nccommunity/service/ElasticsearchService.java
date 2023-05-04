@@ -9,7 +9,6 @@ import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
-import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
@@ -17,13 +16,9 @@ import org.elasticsearch.search.sort.SortBuilders;
 import org.elasticsearch.search.sort.SortOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 @Service
@@ -65,10 +60,8 @@ public class ElasticsearchService {
     
         searchRequest.source(searchSourceBuilder);
         SearchResponse searchResponse = restHighLevelClient.search(searchRequest, RequestOptions.DEFAULT);
-    
-    
-    
-        if (searchResponse.getHits().getTotalHits().value <= 0) {
+        long totalHits = searchResponse.getHits().getTotalHits().value;
+        if (totalHits <= 0) {
             return null;
         }
         
@@ -88,11 +81,12 @@ public class ElasticsearchService {
 //            System.out.println(discussPost);
             list.add(discussPost);
         }
-        
+    ////////////////////////////////////////////////////////////////////////////////////////////////
         Map<String,Object> map = new HashMap<String,Object>();
         map.put("list", list);
-        map.put("sum", searchResponse.getHits().getTotalHits().value);
+        map.put("sum", totalHits);
         return map;
+        
     }
 
 }

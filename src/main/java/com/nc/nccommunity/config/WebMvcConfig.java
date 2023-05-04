@@ -1,8 +1,10 @@
 package com.nc.nccommunity.config;
 
+import com.nc.nccommunity.controller.interceptor.DataInterceptor;
 import com.nc.nccommunity.controller.interceptor.LoginRequiredInterceptor;
 import com.nc.nccommunity.controller.interceptor.LoginTicketInterceptor;
 import com.nc.nccommunity.controller.interceptor.MessageCntInterceptor;
+import com.nc.nccommunity.service.DataService;
 import com.nc.nccommunity.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -17,6 +19,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
 //	private LoginRequiredInterceptor loginRequiredInterceptor;
 	@Autowired
 	private MessageCntInterceptor messageCntInterceptor;
+	@Autowired
+	private DataInterceptor dataInterceptor;
 	
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
@@ -27,6 +31,9 @@ public class WebMvcConfig implements WebMvcConfigurer {
 //				.excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg");
 		
 		registry.addInterceptor(messageCntInterceptor)
+				.excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg");
+		
+		registry.addInterceptor(dataInterceptor)
 				.excludePathPatterns("/**/*.css", "/**/*.js", "/**/*.png", "/**/*.jpg", "/**/*.jpeg");
 		
 	}
