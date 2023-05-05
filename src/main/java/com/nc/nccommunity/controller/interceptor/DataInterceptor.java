@@ -1,14 +1,11 @@
 package com.nc.nccommunity.controller.interceptor;
 
-
-import com.nc.nccommunity.config.WebMvcConfig;
 import com.nc.nccommunity.entity.User;
 import com.nc.nccommunity.service.DataService;
 import com.nc.nccommunity.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -31,6 +28,7 @@ public class DataInterceptor implements HandlerInterceptor {
 		if (user != null) {
 			dataService.recordDAU(user.getId());
 		}
+		
 		return true;
 	}
 }

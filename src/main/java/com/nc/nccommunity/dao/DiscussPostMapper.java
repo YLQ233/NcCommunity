@@ -9,7 +9,7 @@ import java.util.List;
 
 @Mapper
 public interface DiscussPostMapper {
-	List<DiscussPost> selectDiscussPostList(int userId, int offset, int limit);
+	List<DiscussPost> selectDiscussPostList(int userId, int offset, int limit, int orderMode);
 	//帖子总数(如果只有一个参数,并且在<if>里使用,则必须加别名.)
 	int selectDiscussPostRows(@Param("userId") int userId);
 	
@@ -24,5 +24,7 @@ public interface DiscussPostMapper {
 	
 	//加精
 	int updatePostStatus(int postId, int status);
+	
+	int updateScore(int id, double score);
 	
 }

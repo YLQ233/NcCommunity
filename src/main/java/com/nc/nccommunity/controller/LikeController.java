@@ -7,7 +7,9 @@ import com.nc.nccommunity.service.LikeService;
 import com.nc.nccommunity.util.CommunityConstant;
 import com.nc.nccommunity.util.CommunityUtil;
 import com.nc.nccommunity.util.HostHolder;
+import com.nc.nccommunity.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,6 +25,8 @@ public class LikeController implements CommunityConstant {
 	private HostHolder hostHolder;
 	@Autowired
 	private EventProducer eventProducer;
+	@Autowired
+	private RedisTemplate redisTemplate;
 	
 	@PostMapping("/like")
 	@ResponseBody
@@ -40,9 +44,13 @@ public class LikeController implements CommunityConstant {
 					.setEntityId(entityId)
 					.setEntityUserId(entityUserId)
 					.setData("postId", postId);
-			
-			
 			eventProducer.fireEvent(event);
+		}
+		
+		// 计算帖子分数
+		if(entityType == ENTITY_TYPE_POST){
+			String key = RedisUtil.getPostScoreKey();
+			redisTemplate.opsForSet().add(key, entityId);
 		}
 		
 		Map<String,Object> map = new HashMap<String,Object>();

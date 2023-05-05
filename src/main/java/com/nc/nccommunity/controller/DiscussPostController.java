@@ -9,7 +9,9 @@ import com.nc.nccommunity.service.UserService;
 import com.nc.nccommunity.util.CommunityConstant;
 import com.nc.nccommunity.util.CommunityUtil;
 import com.nc.nccommunity.util.HostHolder;
+import com.nc.nccommunity.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -31,6 +33,8 @@ public class DiscussPostController implements CommunityConstant {
 	private LikeService likeService;
 	@Autowired
 	private EventProducer eventProducer;
+	@Autowired
+	private RedisTemplate redisTemplate;
 	
 	@PostMapping("/add")
 	@ResponseBody
@@ -55,6 +59,10 @@ public class DiscussPostController implements CommunityConstant {
 				.setEntityType(ENTITY_TYPE_POST)
 				.setEntityId(discussPost.getId());
 		eventProducer.fireEvent(event);
+		
+		// 计算帖子分数
+		String key = RedisUtil.getPostScoreKey();
+		redisTemplate.opsForSet().add(key, discussPost.getId());
 		
 		return CommunityUtil.getJSONString(0,"发布成功");
 	}
@@ -162,6 +170,10 @@ public class DiscussPostController implements CommunityConstant {
 				.setEntityType(ENTITY_TYPE_POST)
 				.setEntityId(id);
 		eventProducer.fireEvent(event);
+		
+		// 计算帖子分数
+		String key = RedisUtil.getPostScoreKey();
+		redisTemplate.opsForSet().add(key, id);
 		
 		return CommunityUtil.getJSONString(0);
 	}

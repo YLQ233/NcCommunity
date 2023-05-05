@@ -20,7 +20,7 @@ import java.util.List;
 public class DataService {
 	@Autowired
 	private RedisTemplate redisTemplate;
-	private SimpleDateFormat dateFormat;
+	private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");;
 	
 	public void recordUV(String ip){
 		String redisKey = RedisUtil.getUVKey(dateFormat.format(new Date()));

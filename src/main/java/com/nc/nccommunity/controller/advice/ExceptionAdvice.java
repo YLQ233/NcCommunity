@@ -18,7 +18,7 @@ public class ExceptionAdvice {
 	@ExceptionHandler({Exception.class})
 	public void handleException(Exception e, HttpServletRequest request, HttpServletResponse response) throws IOException {
 		// log
-		log.error("服务器发生异常" + e.getMessage());
+		log.error("\n服务器发生异常  msg:\n	" + e.getMessage());
 		for(StackTraceElement element : e.getStackTrace()){
 			log.error(element.toString());
 		}
