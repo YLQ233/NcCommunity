@@ -31,7 +31,7 @@ public class FollowController implements CommunityConstant {
 	@Autowired
 	private EventProducer eventProducer;
 	
-	@LoginRequired
+//	@LoginRequired
 	@PostMapping("/follow")
 	@ResponseBody
 	public String follow(int entityType, int entityId) {
@@ -50,7 +50,7 @@ public class FollowController implements CommunityConstant {
 		return CommunityUtil.getJSONString(0, "已关注!");
 	}
 	
-	@LoginRequired
+//	@LoginRequired
 	@PostMapping("/unfollow")
 	@ResponseBody
 	public String unFollow(int entityType, int entityId) {

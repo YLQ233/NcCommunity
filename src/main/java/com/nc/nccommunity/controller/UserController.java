@@ -54,13 +54,13 @@ public class UserController implements CommunityConstant {
 	@Value("${community.path.upload}")
 	private String uploadPath;
 	
-	@LoginRequired
+//	@LoginRequired
 	@GetMapping("/setting")
 	public String toSettingPage(){
 		return "/site/setting";
 	}
 	
-	@LoginRequired
+//	@LoginRequired
 	@PostMapping("/upload")
 	public String uploadHeader(@RequestPart("headerImage")MultipartFile headerImg, Model model) {
 		//空图处理
@@ -112,7 +112,7 @@ public class UserController implements CommunityConstant {
 		}
 	}
 	
-	@LoginRequired
+//	@LoginRequired
 	@PostMapping("/updatePassword")
 	public String updatePassword(String oldpw, String newpw, Model model){
 		User user = hostHolder.getUser();

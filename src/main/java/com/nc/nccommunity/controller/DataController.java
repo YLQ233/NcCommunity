@@ -8,21 +8,22 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
 import java.util.Date;
 
 @Controller
-@RequestMapping("/data")
 public class DataController {
 	
 	@Autowired
 	private DataService dataService;
 	
-	@GetMapping	@PostMapping
+	@RequestMapping(path = "/data", method = {RequestMethod.GET, RequestMethod.POST})
 	public String getDataPage() {
 		return "site/admin/data";
 	}
 	
-	@PostMapping("/uv")
+	@PostMapping("/data/uv")
 	public String getUV(Model model, @DateTimeFormat(pattern="yyyy-MM-dd")Date begin, @DateTimeFormat(pattern="yyyy-MM-dd")Date end){
 		long uv = dataService.calcUV(begin, end);
 		model.addAttribute("uvResult", uv);
@@ -32,7 +33,7 @@ public class DataController {
 		return "forward:/data";
 	}
 	
-	@PostMapping("/dau")
+	@PostMapping("/data/dau")
 	public String getDAU(Model model, @DateTimeFormat(pattern="yyyy-MM-dd")Date begin, @DateTimeFormat(pattern="yyyy-MM-dd")Date end){
 		long dau = dataService.calcDAU(begin, end);
 		model.addAttribute("dauResult", dau);

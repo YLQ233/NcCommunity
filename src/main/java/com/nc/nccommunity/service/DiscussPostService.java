@@ -47,7 +47,7 @@ public class DiscussPostService {
 	}
 	
 	public int updatePostStatus(int postId, int status){
-		return discussPostMapper.updatePostType(postId, status);
+		return discussPostMapper.updatePostStatus(postId, status);
 	}
 	
 	

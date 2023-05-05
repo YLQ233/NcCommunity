@@ -21,7 +21,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
 	
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-		web.ignoring().antMatchers("/resources/**","/index");
+		web.ignoring().antMatchers("/resources/**");
 	}
 	
 	@Override

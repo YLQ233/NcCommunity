@@ -20,7 +20,7 @@ import java.util.List;
 public class DataService {
 	@Autowired
 	private RedisTemplate redisTemplate;
-	private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");;
+	private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
 	
 	public void recordUV(String ip){
 		String redisKey = RedisUtil.getUVKey(dateFormat.format(new Date()));
@@ -42,7 +42,8 @@ public class DataService {
 		}
 		
 		String redisKey = RedisUtil.getUVKey(dateFormat.format(begin),dateFormat.format(end));
-		redisTemplate.opsForHyperLogLog().union(redisKey, list);
+		redisTemplate.opsForHyperLogLog().union(redisKey, list.toArray());
+		
 		return redisTemplate.opsForHyperLogLog().size(redisKey);
 	}
 	
@@ -75,6 +76,7 @@ public class DataService {
 				return connection.bitCount(redisKey.getBytes());
 			}
 		});
+		
 		return (long) obj;
 	}
 
