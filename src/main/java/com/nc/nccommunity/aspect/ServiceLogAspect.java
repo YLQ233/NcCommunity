@@ -14,8 +14,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@Component
-@Aspect
+//@Component
+//@Aspect
 @Slf4j
 public class ServiceLogAspect {
 	@Pointcut("execution(* com.nc.nccommunity.service.*.*(..))")

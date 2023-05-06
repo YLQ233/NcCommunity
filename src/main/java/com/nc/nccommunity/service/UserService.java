@@ -49,7 +49,7 @@ public class UserService implements CommunityConstant {
 	//1
 	private User getCache(int userId) {
 		String redisKey = RedisUtil.getUserKey(userId);
-		System.out.println("getCache被调用了");
+//		System.out.println("getCache被调用了");
 		
 		return (User) redisTemplate.opsForValue().get(redisKey);
 	}
@@ -59,7 +59,7 @@ public class UserService implements CommunityConstant {
 		String redisKey = RedisUtil.getUserKey(userId);
 		redisTemplate.opsForValue().set(redisKey, user, 3600, TimeUnit.SECONDS);
 		
-		System.out.println("initCache被调用了");
+//		System.out.println("initCache被调用了");
 		return user;
 	}
 	
@@ -67,7 +67,7 @@ public class UserService implements CommunityConstant {
 		String userRedisKey = RedisUtil.getUserKey(userId);
 		redisTemplate.delete(userRedisKey);
 		
-		System.out.println("clearCache被调用了");
+//		System.out.println("clearCache被调用了");
 	}
 	
 	
