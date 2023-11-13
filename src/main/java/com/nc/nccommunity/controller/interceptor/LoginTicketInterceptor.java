@@ -34,7 +34,8 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
 			//验证凭证有效
 			if(loginTicket!=null && loginTicket.getStatus()==0 && loginTicket.getExpired().after(new Date())){
 				User user = userService.getUserById(loginTicket.getUserId());
-				hostHolder.setUser(user);//保存User到本次请求的线程
+				//保存User到本次请求的线程
+				hostHolder.setUser(user);
 				
 				// 构建用户认证的结果,并存入SecurityContext,以便于Security进行授权.
 				Authentication authentication = new UsernamePasswordAuthenticationToken(

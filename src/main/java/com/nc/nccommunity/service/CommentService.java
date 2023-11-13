@@ -31,6 +31,9 @@ public class CommentService implements CommunityConstant {
 		return commentMapper.selectCountByEntity(entityType, entityId);
 	}
 	
+	/**
+	 * 添加评论时，先添加 再更新评论数 作为一个事务
+	 */
 	@Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
 	public int addComment(Comment comment) {
 		if(comment == null){

@@ -34,10 +34,13 @@ public class PostScoreRefreshJob implements Job, CommunityConstant {
 		try {
 			epoch = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse("2014-08-01 00:00:00");
 		} catch (ParseException e) {
-			throw new RuntimeException("初始化牛客纪元失败!", e);
+			throw new RuntimeException("初始化起始年份失败!", e);
 		}
 	}
 	
+	/**
+	 * 定义任务的接口Job的execute方法
+	 */
 	@Override
 	public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
 		BoundSetOperations op = redisTemplate.boundSetOps(RedisUtil.getPostScoreKey());
@@ -51,6 +54,8 @@ public class PostScoreRefreshJob implements Job, CommunityConstant {
 		}
 		log.info("[任务结束] 帖子分数刷新完毕!");
 	}
+	
+	
 	
 	private void refresh(int postId) {
 		DiscussPost post = discussPostService.getDiscussPostById(postId);

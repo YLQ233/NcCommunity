@@ -15,7 +15,7 @@ import java.io.PrintWriter;
 @ControllerAdvice(annotations = Controller.class)
 public class ExceptionAdvice {
 	
-	@ExceptionHandler({Exception.class})
+	@ExceptionHandler({Exception.class})//修饰方法,方法会在Controller出现异常后被调用，用于处理捕获到的异常
 	public void handleException(Exception e, HttpServletRequest request, HttpServletResponse response) throws IOException {
 		// log
 		log.error("\n服务器发生异常  msg:\n	" + e.getMessage());

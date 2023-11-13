@@ -57,8 +57,6 @@ public class DiscussPostService {
 						int offset = Integer.valueOf(params[0]);
 						int limit = Integer.valueOf(params[1]);
 						
-						// 二级缓存: Redis -> mysql
-						
 						log.debug("load post list from DB.");
 						return discussPostMapper.selectDiscussPostList(0, offset, limit, 1);
 					}
